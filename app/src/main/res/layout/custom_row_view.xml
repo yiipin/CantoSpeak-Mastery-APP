@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/menu_bg"
+    android:paddingBottom="10dip"
+    android:paddingLeft="10dip"
+    android:paddingTop="10dip" >
+
+    <TextView
+        android:id="@+id/c_vocabulary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/maintext"
+        android:text="222"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/c_Chinese"
+        android:textSize="20dp"
+        android:textColor="@color/blue"
+        android:text="122"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/c_spelling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="233"
+        android:textSize="20dp"
+        android:gravity="right"
+        android:layout_gravity="right"/>
+
+</LinearLayout>

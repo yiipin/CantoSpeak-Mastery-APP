@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Exovideo_Online">
+
+    <com.jarvanmo.exoplayerview.ui.ExoVideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="1.5" >
+        <Button
+        android:id="@+id/mapyes"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/outsidecircle"
+        android:layout_gravity="center|left"
+        android:clickable="false"
+        android:visibility="invisible"
+        android:text="問路"
+        android:textColor="@color/maintext"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <Button
+            android:id="@+id/mapno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/outsidecircle"
+            android:text="不問路"
+            android:layout_gravity="center|right"
+            android:clickable="false"
+            android:visibility="invisible"
+            android:layout_margin="50dp"
+            android:textColor="@color/maintext"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <Button
+            android:id="@+id/wakeup"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/outsidecircle"
+            android:layout_gravity="center|left"
+            android:clickable="false"
+            android:visibility="invisible"
+            android:text="起床"
+            android:textColor="@color/maintext"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <Button
+            android:id="@+id/nowakeup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/outsidecircle"
+            android:text="繼續睡"
+            android:layout_gravity="center|right"
+            android:clickable="false"
+            android:visibility="invisible"
+            android:layout_margin="50dp"
+            android:textColor="@color/maintext"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <Button
+            android:id="@+id/help"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/outsidecircle"
+            android:layout_gravity="center|left"
+            android:clickable="false"
+            android:visibility="invisible"
+            android:text="求救路人"
+            android:textColor="@color/maintext"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <Button
+            android:id="@+id/nohelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/outsidecircle"
+            android:text="自立自強"
+            android:layout_gravity="center|right"
+            android:clickable="false"
+            android:visibility="invisible"
+            android:layout_margin="50dp"
+            android:textColor="@color/maintext"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+    </com.jarvanmo.exoplayerview.ui.ExoVideoView>
+
+    <ScrollView
+        android:id="@+id/wrapper"
+        android:background="@color/menu_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_gravity=""
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/changeMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:text="點擊按鈕來觀看不同的對話情境吧~!"
+        android:textColor="@color/maintext"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/map"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/outsidecircle"
+            android:text="問路篇"
+
+            android:textColor="@color/maintext"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/car"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/outsidecircle"
+            android:text="趕車篇"
+            android:layout_margin="10dp"
+            android:textColor="@color/maintext"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+</LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

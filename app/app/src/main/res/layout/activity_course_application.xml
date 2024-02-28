@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/menu_bg"
+    android:gravity="center"
+    tools:context=".course_application">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        app:cardCornerRadius="50dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/menu_buttonbg"
+        android:layout_height="150dp"
+        android:onClick="number">
+        <ImageView
+
+            android:background="@color/menu_buttonbg"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:onClick="number"
+            android:src="@drawable/application_number">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="數字"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20dp">
+
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginTop="30dp"
+        app:cardBackgroundColor="@color/menu_buttonbg"
+        android:onClick="date">
+
+        <ImageView
+            android:background="@color/menu_buttonbg"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:onClick="date"
+            android:src="@drawable/application_daily">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日期"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20dp">
+
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="50dp"
+        app:cardBackgroundColor="@color/menu_buttonbg"
+        android:onClick="daily">
+
+        <ImageView
+            android:background="@color/menu_buttonbg"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:onClick="daily"
+            android:src="@drawable/application_word">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日常"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20dp">
+
+        </TextView>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

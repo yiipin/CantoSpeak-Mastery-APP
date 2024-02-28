@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Exovideo_Online2"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".exam_score_im"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".exam_score_hd"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".exam_score"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".exam_intermediate"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".exam_hard"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".exam_easy"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".exam_menu"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".Videomenu"
+            android:screenOrientation="portrait"  />
+        <activity
+            android:name=".Exovideo_Online"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".podcast_2"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".podcast_1"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".course_application_date"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".course_application_number"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".course_application"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".podcasttest01"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".podcast"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".course_conversation_greetings"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".course_conversation_viewpoint"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".course_conversation_shopping"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".course_conversation_emergency"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".course_conversation_order"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".course_conversation_chat"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".course_conversation_stay"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".course_conversation_traffic"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".course_conversation_exchange"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".course_conversation_airport"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".course_word"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".course_conversation"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".course_vocabulary"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".course_speaking"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".course"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".song"
+            android:screenOrientation="portrait"  />
+        <activity android:name=".IntroActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            />
+    </application>
+
+
+</manifest>

@@ -1,0 +1,2396 @@
+@import url("reset.css");
+*{
+	margin:0;
+	padding:0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+	font-family: "Microsoft JhengHei","Heiti TC","sans-serif";
+}
+img{
+    display: block;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#menubtn{
+    display: none;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #8C573B;
+}
+
+header > nav{
+    width: 1024px;
+    height: 97px;
+    margin: 0 auto;
+}
+
+header > nav > h1 > a{
+    line-height: 97px;
+    font-size: 18px;
+    color: #fff;
+    float: left;
+}
+
+header > nav > h1 > a:hover{
+    color: #FFD700;
+}
+
+header > nav > div{
+    font-size: 18px;
+    color: #fff;
+    float: right;
+}
+
+header > nav > div > a{
+    display: block;
+    line-height: 97px;
+    float: left;
+    padding: 0 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+header > nav > div > a:hover{
+    color: #FFD700;
+}
+/*------------------------------------------------------*/
+aside{
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-image: url('../images/bomb.png');
+    background-size: cover;
+}
+
+aside > h3{
+    font-size: 2.4em;
+    color: #fff;
+    text-align: center;
+    line-height: 1.6em;
+    text-shadow: 1px 5px 5px #000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(0, 0, 0, 0.2);
+}
+/*------------------------------------------------------*/
+article{
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-image: url('../images/playpage.png');
+}
+
+article > div.one{
+    width: 1280px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 84px 0px 84px 0px;
+}
+
+article > div.one > div.frame{
+    width: 21%;
+    height: 520px;
+    /*background-color: #8A2BE2;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+button {
+  margin: 20px;
+  outline: none;
+}
+
+article > div.one > div.frame > button.btn1, button.btn2, button.btn3, button.btn4, button.btn5{
+    height: 100%;
+    background: #000;
+    color: #fff;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+article > div.one > div.frame > button.btn1 {
+  background: #8C573B;
+  color: #fff;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+article > div.one > div.frame > button.btn1:hover{
+    background: transparent;
+  color: #8C573B;
+   box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+}
+
+article > div.one > div.frame > button.btn1::before, button.btn1::after{
+     content:'';
+      position:absolute;
+      top:0;
+      right:0;
+      height:2px;
+      width:0;
+      background: #8C573B;
+      transition:400ms ease all;
+}
+
+article > div.one > div.frame > button.btn1::after {
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+
+article > div.one > div.frame > button.btn1:hover::before, button.btn1:hover::after{
+    width:100%;
+    transition:800ms ease all;
+}
+
+article > div.one > div.frame > button.btn2 {
+  background: #8C573B;
+  color: #fff;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+article > div.one > div.frame > button.btn2:hover{
+    background: transparent;
+  color: #8C573B;
+   box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+}
+
+article > div.one > div.frame > button.btn2::before, button.btn2::after{
+     content:'';
+      position:absolute;
+      top:0;
+      right:0;
+      height:2px;
+      width:0;
+      background: #8C573B;
+      transition:400ms ease all;
+}
+
+article > div.one > div.frame > button.btn2::after {
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+
+article > div.one > div.frame > button.btn2:hover::before, button.btn2:hover::after{
+    width:100%;
+    transition:800ms ease all;
+}
+
+article > div.one > div.frame > button.btn3 {
+  background: #8C573B;
+  color: #fff;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+article > div.one > div.frame > button.btn3:hover{
+    background: transparent;
+  color: #8C573B;
+   box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+}
+
+article > div.one > div.frame > button.btn3::before, button.btn3::after{
+     content:'';
+      position:absolute;
+      top:0;
+      right:0;
+      height:2px;
+      width:0;
+      background: #8C573B;
+      transition:400ms ease all;
+}
+
+article > div.one > div.frame > button.btn3::after {
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+
+article > div.one > div.frame > button.btn3:hover::before, button.btn3:hover::after{
+    width:100%;
+    transition:800ms ease all;
+}
+
+article > div.one > div.frame > button.btn4 {
+  background: #8C573B;
+  color: #fff;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+article > div.one > div.frame > button.btn4:hover{
+    background: transparent;
+  color: #8C573B;
+   box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+}
+
+article > div.one > div.frame > button.btn4::before, button.btn4::after{
+     content:'';
+      position:absolute;
+      top:0;
+      right:0;
+      height:2px;
+      width:0;
+      background: #8C573B;
+      transition:400ms ease all;
+}
+
+article > div.one > div.frame > button.btn4::after {
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+
+article > div.one > div.frame > button.btn4:hover::before, button.btn4:hover::after{
+    width:100%;
+    transition:800ms ease all;
+}
+
+article > div.one > div.frame > button.btn5 {
+  background: #8C573B;
+  color: #fff;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+article > div.one > div.frame > button.btn5:hover{
+    background: transparent;
+  color: #8C573B;
+   box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+}
+
+article > div.one > div.frame > button.btn5::before, button.btn5::after{
+     content:'';
+      position:absolute;
+      top:0;
+      right:0;
+      height:2px;
+      width:0;
+      background: #8C573B;
+      transition:400ms ease all;
+}
+
+article > div.one > div.frame > button.btn5::after {
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+
+article > div.one > div.frame > button.btn5:hover::before, button.btn5:hover::after{
+    width:100%;
+    transition:800ms ease all;
+}
+
+/*------------------------------------------------------*/
+article > div.one > div.msg-container{
+    width: 77%;
+    height: 1000px;
+    /*background-color: rgb(238, 232, 170, 0.5);*/
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+article > div.one > div.msg-container > div.slider{
+    display: inline-flex;
+    transition: 0.5s;
+}
+
+article > div.one > div.msg-container > div.slider > div.msg-col{
+    width: 990px;
+    height: 300px;
+    margin: 15px;
+}
+
+article > div.one > div.msg-container > div.slider > div.msg-col > h1{
+    color: #5e2c11;
+    font-size: 80px;
+    font-weight: 900;
+    margin: 10px 0px 0px 75px;
+}
+
+article > div.one > div.msg-container > div.slider > div.msg-col > p{
+    color: #000;
+    font-size: 22px;
+    margin: 0px 75px 0px 75px;
+    padding-right: 35px;
+    line-height: 38px;
+    font-weight: bold;
+}
+
+article > div.one > div.msg-container > div.slider > div.msg-col > div{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+}
+
+article > div.one > div.msg-container > div.slider > div.msg-col > div > img{
+    width: 36%;
+    height: 100%;
+    margin: 0px 10px 10px 70px;
+    padding-top: 20px;
+}
+
+article > div.one > div.msg-container > div.slider > div.msg-col > a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-left: 75px;
+}
+
+article > div.one > div.msg-container > div.slider > div.msg-col > a:hover{
+    color: #fff;
+    background: #000;
+}
+
+.toTop-arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 33%;
+    opacity: 0.6;
+    background: #000;
+    cursor: pointer;
+    position:fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+    width: 18px;
+    height: 5px;
+    border-radius: 3px;
+    background: #f90;
+    position: absolute;
+    content: "";
+}
+.toTop-arrow::before {
+    transform: rotate(-45deg) translate(0, -50%);
+    left: 0.5rem;
+}
+.toTop-arrow::after {
+    transform: rotate(45deg) translate(0, -50%);
+    right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;}
+ 
+ 
+/* 48px */
+.toTop-arrow {
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 33%;
+    opacity: 0.6;
+    background: #000;
+    cursor: pointer;
+    position:fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+    width: 25px;
+    height: 6px;
+    border-radius: 3px;
+    background: #f90;
+    position: absolute;
+    content: "";
+}
+.toTop-arrow::before {
+    transform: rotate(-45deg) translate(0, -50%);
+    left: 0.42rem;
+}
+.toTop-arrow::after {
+    transform: rotate(45deg) translate(0, -50%);
+    right: 0.42rem;
+}
+.toTop-arrow:focus {outline: none;}
+ 
+/* 56px */
+.toTop-arrow {
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 33%;
+    opacity: 0.6;
+    background: #000;
+    cursor: pointer;
+    position:fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+    width: 31px;
+    height: 7px;
+    border-radius: 3px;
+    background: #f90;
+    position: absolute;
+    content: "";
+}
+.toTop-arrow::before {
+    transform: rotate(-45deg) translate(0, -50%);
+    left: 0.4rem;
+}
+.toTop-arrow::after {
+    transform: rotate(45deg) translate(0, -50%);
+    right: 0.4rem;
+}
+.toTop-arrow:focus {outline: none;}
+
+footer{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #8C573B;
+}
+
+footer > div{
+    width: 1024px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 10px 0px 0px 80px;
+}
+
+footer > div > div{
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+
+footer > div > div.wordbox{
+    float: left;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+footer > div > div.linkbox{
+    float: right;   
+    padding-top: 30px;
+    padding-left: 100px;
+}
+
+div.wordbox > h6{
+    font-size: 30px;
+    color: #fff;
+}
+
+footer > div > div.linkbox > div{
+  display: flex;
+}
+
+div.wordbox > a{
+    font-size: 20px;
+    padding-top: 20px;
+    line-height: 20px;
+    color: #fff;
+    font-family: "Microsoft JhengHei","sans-serif";
+}
+
+div.wordbox > a:hover{
+  text-decoration: none;
+  color: #FFD700;
+}
+
+div.linkbox > h3{
+    font-size: 30px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+
+#FB{
+     color: rgb(30, 144, 255);
+}
+/*------------------------------------------------------*/
+@media screen and (max-width: 1024px) {
+    header > nav, article > div, aside > div, main > div, section > div, footer > div{
+        width: 100%;
+    }
+
+    header > nav > h1 > a{
+        padding-left: 30px;
+    }
+
+    header > nav > div > a{
+        line-height: 97px;
+        padding: 0 10px;
+        padding-right: 20px;
+    }
+
+    aside{
+      background-position: 50%0%;
+    }
+
+    article{
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    /*background-size: cover;*/
+    background-image: url('../images/in1024.png');
+    }
+
+    article > div.one{
+        width: 1024px;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        /*justify-content: space-between;*/
+        padding: 84px 0px 84px 0px;
+    }
+
+    article > div.one > div.frame{
+        width: 100%;
+        height: 220px;
+        /*background-color: #8A2BE2;*/
+        margin: 0px auto;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    button {
+      margin: 20px;
+      outline: none;
+    }
+
+    article > div.one > div.frame > button.btn1, button.btn2, button.btn3, button.btn4, button.btn5{
+        width: 600px;
+        height: 70px;
+        background: #000;
+        color: #fff;
+        padding: 10px 25px;
+        border: 2px solid #000;
+        font-family: 'Lato', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+    }
+
+    article > div.one > div.frame > button.btn1 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+
+
+    article > div.one > div.frame > button.btn2 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+
+    article > div.one > div.frame > button.btn3 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+
+    article > div.one > div.frame > button.btn4 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+
+
+    article > div.one > div.frame > button.btn5 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+    /*------------------------------------------------------*/
+    article > div.one > div.msg-container{
+        width: 100%;
+        height: 1000px;
+        background-color: rgb(238, 232, 170, 0.5);
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > h1{
+        font-size: 80px;
+        font-weight: 900;
+        margin: 10px 0px 0px 75px;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > p{
+        color: #000;
+        font-size: 22px;
+        margin: 0px 75px 0px 75px;
+        padding-right: 35px;
+        line-height: 38px;
+        font-weight: bold;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div > img{
+        width: 36%;
+        height: 100%;
+        margin: 0px 10px 10px 70px;
+        padding-top: 20px;
+    }
+
+
+    footer > div > div.linkbox{ 
+        padding-top: 30px;
+        padding-left: 50px;
+    }
+
+    footer > div{
+    padding: 10px 50px 20px 170px;
+    }
+}
+/*------------------------------------------------------*/
+@media screen and (max-width: 930px){
+  aside{
+      background-position: 50%0%;
+    }
+
+    article{
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    /*background-size: cover;*/
+    background-image: url('../images/in1024.png');
+    }
+
+    article > div.one{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        /*justify-content: space-between;*/
+        padding: 84px 0px 84px 0px;
+    }
+
+    article > div.one > div.frame{
+        width: 100%;
+        height: 220px;
+        /*background-color: #8A2BE2;*/
+        margin: 0px auto;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    button {
+      margin: 20px;
+      outline: none;
+    }
+
+    article > div.one > div.frame > button.btn1, button.btn2, button.btn3, button.btn4, button.btn5{
+        width: 600px;
+        height: 70px;
+        background: #000;
+        color: #fff;
+        padding: 10px 25px;
+        border: 2px solid #000;
+        font-family: 'Lato', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+    }
+
+    article > div.one > div.frame > button.btn1 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+    /*------------------------------------------------------*/
+    article > div.one > div.msg-container{
+        width: 100%;
+        height: 1000px;
+        background-color: rgb(238, 232, 170, 0.5);
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > h1{
+        font-size: 80px;
+        font-weight: 900;
+        margin: 10px 0px 0px 25px;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > p{
+        color: #000;
+        font-size: 22px;
+        margin: 0px 75px 0px 35px;
+        padding-right: 35px;
+        line-height: 38px;
+        font-weight: bold;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div > img{
+        width: 36%;
+        height: 100%;
+        margin: 0px 10px 10px 50px;
+        padding-top: 20px;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > a{
+      margin-top: 15px;
+      margin-left: 35px;
+    }
+
+    footer > div > div.linkbox{ 
+        padding-top: 30px;
+        padding-left: 50px;
+    }
+
+    footer > div{
+    padding: 10px 50px 20px 170px;
+    }
+}
+/*------------------------------------------------------*/
+@media screen and (max-width: 768px){
+  #menubtn{
+        display: block;
+        width: 82px;
+        height: 74px;
+        background-image: url('../images/menured.png');
+        float: right;
+    }
+    header > nav{
+        transition: height 0.3s;
+        height: 74px;
+        overflow: hidden;
+    }
+
+    header > nav.open{
+        height: 310px;
+    }
+
+    header > nav > h1 > a{
+        line-height: 74px;
+    }
+
+    header > nav > div{
+        clear: both;
+        padding-left: 0px;
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    header > nav > div > a{
+        line-height: 74px;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        padding-left: 30px;
+    }
+
+    aside{
+      background-position: 50%0%;
+    }
+
+    article{
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    /*background-size: cover;*/
+    background-image: url('../images/introduce.png');
+    background-position: 50%0%;
+    }
+
+    article > div.one{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        /*justify-content: space-between;*/
+        padding: 84px 0px 84px 0px;
+    }
+
+    article > div.one > div.frame{
+        width: 100%;
+        height: 320px;
+        /*background-color: #8A2BE2;*/
+        margin: 0px auto;
+        text-align: center;
+        display: block;
+        /*flex-direction: row;*/
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    button {
+      margin: 20px;
+      outline: none;
+    }
+
+    article > div.one > div.frame > button.btn1, button.btn2, button.btn3, button.btn4, button.btn5{
+        width: 42%;
+        height: 50px;
+        background: #000;
+        color: #fff;
+        padding: 10px 25px;
+        border: 2px solid #000;
+        font-family: 'Lato', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+    }
+
+    article > div.one > div.frame > button.btn1 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+
+
+    article > div.one > div.frame > button.btn2 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+
+    article > div.one > div.frame > button.btn3 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+
+    article > div.one > div.frame > button.btn4 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+
+
+    article > div.one > div.frame > button.btn5 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+    /*------------------------------------------------------*/
+    article > div.one > div.msg-container{
+        width: 100%;
+        height: 1900px;
+        background-color: rgb(238, 232, 170, 0.5);
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col{
+        width: 768px;
+        height: 300px;
+        margin: 15px;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > h1{
+        font-size: 80px;
+        font-weight: 900;
+        /*margin-top: 10px 0px 0px 75px;*/
+        margin-top: 10px;
+        margin-left: 12%;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > p{
+        color: #000;
+        font-size: 22px;
+        /*margin: 0px 75px 0px 75px;*/
+        margin-left: 12%;
+        margin-right: 11%;
+        padding-right: 5%;
+        line-height: 38px;
+        font-weight: bold;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > a{
+    margin-top: 15px;
+    margin-left: 55px;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div > img{
+        width: 50%;
+        height: 100%;
+        margin: 0px 10px 10px 160px;
+        padding-top: 20px;
+    }
+
+    footer > div > div.linkbox{ 
+    padding-top: 30px;
+    padding-left: 20px;
+    }
+
+    footer > div{
+    padding: 10px 0px 10px 100px;
+    }
+}
+/*------------------------------------------------------*/
+@media screen and (max-width: 640px) {
+    #menubtn{
+        display: block;
+        width: 82px;
+        height: 74px;
+        background-image: url('../images/menured.png');
+        float: right;
+    }
+    header > nav{
+        transition: height 0.3s;
+        height: 74px;
+        overflow: hidden;
+    }
+
+    header > nav.open{
+        height: 310px;
+    }
+
+    header > nav > h1 > a{
+        line-height: 74px;
+    }
+
+    header > nav > div{
+        clear: both;
+        padding-left: 0px;
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    header > nav > div > a{
+        line-height: 74px;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        padding-left: 30px;
+    }
+
+    aside{
+      background-position: 50%0%;
+    }
+
+    article{
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    /*background-size: cover;*/
+    background-image: url('../images/introduce.png');
+    background-position: 50%0%;
+    }
+
+    article > div.one{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        /*justify-content: space-between;*/
+        padding: 84px 0px 84px 0px;
+    }
+
+    article > div.one > div.frame{
+        width: 100%;
+        height: 320px;
+        /*background-color: #8A2BE2;*/
+        margin: 0px auto;
+        text-align: center;
+        display: block;
+        /*flex-direction: row;*/
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    button {
+      margin: 20px;
+      outline: none;
+    }
+
+    article > div.one > div.frame > button.btn1, button.btn2, button.btn3, button.btn4, button.btn5{
+        width: 42%;
+        height: 50px;
+        background: #000;
+        color: #fff;
+        padding: 10px 25px;
+        border: 2px solid #000;
+        font-family: 'Lato', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+    }
+
+    article > div.one > div.frame > button.btn1 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+
+
+    article > div.one > div.frame > button.btn2 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+
+    article > div.one > div.frame > button.btn3 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+
+    article > div.one > div.frame > button.btn4 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+
+
+    article > div.one > div.frame > button.btn5 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+    /*------------------------------------------------------*/
+    article > div.one > div.msg-container{
+        width: 100%;
+        height: 1700px;
+        background-color: rgb(238, 232, 170, 0.5);
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col{
+        width: 640px;
+        height: 300px;
+        margin: 15px;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > h1{
+        font-size: 80px;
+        font-weight: 900;
+        /*margin-top: 10px 0px 0px 75px;*/
+        margin-top: 10px;
+        margin-left: 11%;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > p{
+        color: #000;
+        font-size: 22px;
+        /*margin: 0px 75px 0px 75px;*/
+        margin-left: 11%;
+        margin-right: 11%;
+        padding-right: 5%;
+        line-height: 38px;
+        font-weight: bold;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > a{
+    margin-top: 15px;
+    margin-left: 55px;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div > img{
+        width: 50%;
+        height: 100%;
+        margin: 0px 10px 10px 140px;
+        padding-top: 20px;
+    }
+
+    footer > div > div.linkbox{ 
+    padding-top: 30px;
+    padding-left: 20px;
+    }
+
+    footer > div{
+    padding: 10px 0px 10px 100px;
+    }
+
+}
+/*------------------------------------------------------*/
+@media screen and (min-width: 501px) and (max-width: 540px){
+   #menubtn{
+        display: block;
+        width: 60px;
+        height: 53px;
+        background-size: 100% 100%;
+        float: right;
+    }
+
+    header > nav{
+        transition: height 0.3s;
+        height: 53px;
+        overflow: hidden;
+    }
+
+    header > nav.open{
+        height: 220px;
+    }
+
+    header > nav > h1 > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+    header > nav > div > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+    aside{
+      background-position: 50%0%;
+    }
+
+    article{
+      display: block;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      /*background-size: cover;*/
+      background-image: url('../images/introduce.png');
+      background-position: 50%0%;
+    }
+
+    article > div.one{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        /*justify-content: space-between;*/
+        padding: 24px 0px 84px 0px;
+    }
+
+    article > div.one > div.frame{
+        width: 100%;
+        height: 300px;
+        /*background-color: #8A2BE2;*/
+        margin: 0px auto;
+        text-align: center;
+        display: block;
+        /*flex-direction: row;*/
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    button {
+      margin: 20px;
+      outline: none;
+    }
+
+    article > div.one > div.frame > button.btn1, button.btn2, button.btn3, button.btn4, button.btn5{
+        width: 35%;
+        height: 50px;
+        background: #000;
+        color: #fff;
+        padding: 10px 25px;
+        border: 2px solid #000;
+        font-family: 'Lato', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+    }
+
+    article > div.one > div.frame > button.btn1 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+
+    /*------------------------------------------------------*/
+    article > div.one > div.msg-container{
+        width: 100%;
+        height: 1350px;
+        background-color: rgb(238, 232, 170, 0.5);
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col{
+        width: 480px;
+        height: 300px;
+        margin: 15px;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > h1{
+        font-size: 60px;
+        font-weight: 900;
+        /*margin-top: 10px 0px 0px 75px;*/
+        margin-top: 15px;
+        margin-left: 10%;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > p{
+        color: #000;
+        font-size: 20px;
+        /*margin: 0px 75px 0px 75px;*/
+        margin-left: 12%;
+        margin-right: 4%;
+        padding-right: 3%;
+        line-height: 38px;
+        font-weight: bold;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div > img{
+        width: 50%;
+        height: 100%;
+        margin: 0px 10px 10px 120px;
+        padding-top: 20px;
+    }
+
+    footer > div > div.linkbox{ 
+    padding-left: 10px;
+    }
+
+    footer > div{
+    padding: 10px 0px 10px 60px;
+    }
+}
+/*------------------------------------------------------*/
+@media screen and (min-width: 480px) and (max-width: 500px) {
+
+    #menubtn{
+        display: block;
+        width: 60px;
+        height: 53px;
+        background-size: 100% 100%;
+        float: right;
+    }
+
+    header > nav{
+        transition: height 0.3s;
+        height: 53px;
+        overflow: hidden;
+    }
+
+    header > nav.open{
+        height: 220px;
+    }
+
+    header > nav > h1 > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+    header > nav > div > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+    aside{
+      background-position: 50%0%;
+    }
+
+    article{
+      display: block;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      /*background-size: cover;*/
+      background-image: url('../images/introduce.png');
+      background-position: 50%0%;
+    }
+
+    article > div.one{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        /*justify-content: space-between;*/
+        padding: 24px 0px 84px 0px;
+    }
+
+    article > div.one > div.frame{
+        width: 100%;
+        height: 300px;
+        /*background-color: #8A2BE2;*/
+        margin: 0px auto;
+        text-align: center;
+        display: block;
+        /*flex-direction: row;*/
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    button {
+      margin: 20px;
+      outline: none;
+    }
+
+    article > div.one > div.frame > button.btn1, button.btn2, button.btn3, button.btn4, button.btn5{
+        width: 35%;
+        height: 50px;
+        background: #000;
+        color: #fff;
+        padding: 10px 25px;
+        border: 2px solid #000;
+        font-family: 'Lato', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+    }
+
+    article > div.one > div.frame > button.btn1 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+
+    /*------------------------------------------------------*/
+    article > div.one > div.msg-container{
+        width: 100%;
+        height: 1350px;
+        background-color: rgb(238, 232, 170, 0.5);
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col{
+        width: 480px;
+        height: 300px;
+        margin: 15px;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > h1{
+        font-size: 60px;
+        font-weight: 900;
+        /*margin-top: 10px 0px 0px 75px;*/
+        margin-top: 15px;
+        margin-left: 7%;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > p{
+        color: #000;
+        font-size: 20px;
+        /*margin: 0px 75px 0px 75px;*/
+        margin-left: 8%;
+        margin-right: 8%;
+        padding-right: 3%;
+        line-height: 38px;
+        font-weight: bold;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div > img{
+        width: 50%;
+        height: 100%;
+        margin: 0px 10px 10px 100px;
+        padding-top: 20px;
+    }
+
+    footer > div > div.linkbox{ 
+    padding-left: 10px;
+    }
+
+    footer > div{
+    padding: 10px 0px 10px 60px;
+    }
+
+}
+/*------------------------------------------------------*/
+@media screen and (min-width: 420px) and (max-width: 479px){
+  #menubtn{
+        display: block;
+        width: 60px;
+        height: 53px;
+        background-size: 100% 100%;
+        float: right;
+    }
+
+    header > nav{
+        transition: height 0.3s;
+        height: 53px;
+        overflow: hidden;
+    }
+
+    header > nav.open{
+        height: 220px;
+    }
+
+    header > nav > h1 > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+    header > nav > div > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+    aside{
+      background-position: 50%0%;
+    }
+
+    article{
+      display: block;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      /*background-size: cover;*/
+      background-image: url('../images/introduce.png');
+      background-position: 50%0%;
+    }
+
+    article > div.one{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        /*justify-content: space-between;*/
+        padding: 24px 0px 84px 0px;
+    }
+
+    article > div.one > div.frame{
+        width: 100%;
+        height: 300px;
+        /*background-color: #8A2BE2;*/
+        margin: 0px auto;
+        text-align: center;
+        display: block;
+        /*flex-direction: row;*/
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    button {
+      margin: 20px;
+      outline: none;
+    }
+
+    article > div.one > div.frame > button.btn1, button.btn2, button.btn3, button.btn4, button.btn5{
+        width: 35%;
+        height: 50px;
+        background: #000;
+        color: #fff;
+        padding: 10px 25px;
+        border: 2px solid #000;
+        font-family: 'Lato', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+    }
+
+    article > div.one > div.frame > button.btn1 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+
+    /*------------------------------------------------------*/
+    article > div.one > div.msg-container{
+        width: 100%;
+        height: 1350px;
+        background-color: rgb(238, 232, 170, 0.5);
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col{
+        width: 420px;
+        height: 300px;
+        margin: 15px;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > h1{
+        font-size: 50px;
+        font-weight: 900;
+        /*margin-top: 10px 0px 0px 75px;*/
+        margin-top: 15px;
+        margin-left: 6%;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > p{
+        color: #000;
+        font-size: 19px;
+        /*margin: 0px 75px 0px 75px;*/
+        margin-left: 8%;
+        margin-right: 10%;
+        padding-right: 3%;
+        line-height: 38px;
+        font-weight: bold;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div > img{
+        width: 50%;
+        height: 100%;
+        margin: 0px 10px 10px 85px;
+        padding-top: 20px;
+    }
+
+    footer > div{
+    padding: 20%;
+  }
+
+  footer > div > div{
+    width: 100%;
+  }
+
+  footer > div > div.wordbox{
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  footer > div > div.linkbox{
+    float: left;  
+    padding-left: 20px;
+  }
+}
+/*------------------------------------------------------*/
+@media screen and (min-width: 401px) and (max-width: 419px){
+  #menubtn{
+        display: block;
+        width: 60px;
+        height: 53px;
+        background-size: 100% 100%;
+        float: right;
+    }
+
+    header > nav{
+        transition: height 0.3s;
+        height: 53px;
+        overflow: hidden;
+    }
+
+    header > nav.open{
+        height: 220px;
+    }
+
+    header > nav > h1 > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+    header > nav > div > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+    article{
+      display: block;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      /*background-size: cover;*/
+      background-image: url('../images/introduce.png');
+      background-position: 50%0%;
+    }
+
+    article > div.one{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        /*justify-content: space-between;*/
+        padding: 24px 0px 84px 0px;
+    }
+
+    article > div.one > div.frame{
+        width: 100%;
+        height: 300px;
+        /*background-color: #8A2BE2;*/
+        margin: 0px auto;
+        text-align: center;
+        display: block;
+        /*flex-direction: row;*/
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    button {
+      margin: 20px;
+      outline: none;
+    }
+
+    article > div.one > div.frame > button.btn1, button.btn2, button.btn3, button.btn4, button.btn5{
+        width: 35%;
+        height: 50px;
+        background: #000;
+        color: #fff;
+        padding: 10px 25px;
+        border: 2px solid #000;
+        font-family: 'Lato', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+    }
+
+    article > div.one > div.frame > button.btn1 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+
+    /*------------------------------------------------------*/
+    article > div.one > div.msg-container{
+        width: 100%;
+        height: 1350px;
+        background-color: rgb(238, 232, 170, 0.5);
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col{
+        width: 414px;
+        height: 300px;
+        margin: 15px;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > h1{
+        font-size: 50px;
+        font-weight: 900;
+        /*margin-top: 10px 0px 0px 75px;*/
+        margin-top: 15px;
+        margin-left: 6%;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > p{
+        color: #000;
+        font-size: 19px;
+        /*margin: 0px 75px 0px 75px;*/
+        margin-left: 8%;
+        margin-right: 10%;
+        padding-right: 3%;
+        line-height: 38px;
+        font-weight: bold;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div > img{
+        width: 50%;
+        height: 100%;
+        margin: 0px 10px 10px 85px;
+        padding-top: 20px;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > a{
+    margin-top: 3%;
+    margin-left: 6%;
+    }
+
+    footer > div{
+    padding: 20%;
+    }
+
+    footer > div > div{
+      width: 100%;
+    }
+
+    div.wordbox > h6{
+      font-size: 40px;
+    }
+
+    div.wordbox > a{
+     font-size: 30px;
+    }
+
+    div.linkbox > h3{
+      font-size: 40px;
+    }
+
+    footer > div > div.wordbox{
+      float: left;
+      padding-top: 20px;
+      padding-left: 20px;
+    }
+
+    footer > div > div.linkbox{
+      float: left;  
+      padding-left: 20px;
+    }
+}
+/*------------------------------------------------------*/
+@media screen and (min-width: 375px) and (max-width: 400px){
+  #menubtn{
+        display: block;
+        width: 60px;
+        height: 53px;
+        background-size: 100% 100%;
+        float: right;
+    }
+
+    header > nav{
+        transition: height 0.3s;
+        height: 53px;
+        overflow: hidden;
+    }
+
+    header > nav.open{
+        height: 220px;
+    }
+
+    header > nav > h1 > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+    header > nav > div > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+    article{
+      display: block;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      /*background-size: cover;*/
+      background-image: url('../images/introduce.png');
+      background-position: 50%0%;
+    }
+
+    article > div.one{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        /*justify-content: space-between;*/
+        padding: 24px 0px 84px 0px;
+    }
+
+    article > div.one > div.frame{
+        width: 100%;
+        height: 300px;
+        /*background-color: #8A2BE2;*/
+        margin: 0px auto;
+        text-align: center;
+        display: block;
+        /*flex-direction: row;*/
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    button {
+      margin: 20px;
+      outline: none;
+    }
+
+    article > div.one > div.frame > button.btn1, button.btn2, button.btn3, button.btn4, button.btn5{
+        width: 35%;
+        height: 50px;
+        background: #000;
+        color: #fff;
+        padding: 10px 25px;
+        border: 2px solid #000;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+    }
+
+    article > div.one > div.frame > button.btn1 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+
+    /*------------------------------------------------------*/
+    article > div.one > div.msg-container{
+        width: 100%;
+        height: 1350px;
+        background-color: rgb(238, 232, 170, 0.5);
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col{
+        width: 375px;
+        height: 300px;
+        margin: 15px;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > h1{
+        font-size: 40px;
+        font-weight: 900;
+        /*margin-top: 10px 0px 0px 75px;*/
+        margin-top: 15px;
+        margin-left: 6%;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > p{
+        color: #000;
+        font-size: 19px;
+        /*margin: 0px 75px 0px 75px;*/
+        margin-left: 8%;
+        margin-right: 10%;
+        padding-right: 3%;
+        line-height: 38px;
+        font-weight: bold;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div > img{
+        width: 50%;
+        height: 100%;
+        margin: 0px 10px 10px 85px;
+        padding-top: 20px;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > a{
+    margin-top: 3%;
+    margin-left: 6%;
+    }
+
+    footer > div{
+    padding: 20%;
+    }
+
+    footer > div > div{
+      width: 100%;
+    }
+
+    footer > div > div.wordbox{
+      float: left;
+      padding-top: 20px;
+      padding-left: 20px;
+    }
+
+    footer > div > div.linkbox{
+      float: left;  
+      padding-left: 20px;
+    }
+}
+/*------------------------------------------------------*/
+@media screen and (min-width: 360px) and (max-width: 374px){
+    #menubtn{
+    display: block;
+    width: 41px;
+    height: 37px;
+    background-size: 100% 100%;
+    float: right;
+  }
+
+  header > nav{
+    transition: height 0.3s;
+    height: 37px;
+    overflow: hidden;
+  }
+
+  header > nav.open{
+    height: 155px;
+  }
+
+  header > nav > h1 > a{
+    line-height: 37px;
+    padding-left: 20px;
+  }
+
+  header > nav > div > a{
+    line-height: 37px;
+    padding-left: 20px;
+  }
+
+  article{
+      display: block;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      /*background-size: cover;*/
+      background-image: url('../images/introduce.png');
+      background-position: 50%0%;
+    }
+
+    article > div.one{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        /*justify-content: space-between;*/
+        padding: 24px 0px 84px 0px;
+    }
+
+    article > div.one > div.frame{
+        width: 100%;
+        height: 300px;
+        /*background-color: #8A2BE2;*/
+        margin: 0px auto;
+        text-align: center;
+        display: block;
+        /*flex-direction: row;*/
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    button {
+      margin: 20px;
+      outline: none;
+    }
+
+    article > div.one > div.frame > button.btn1, button.btn2, button.btn3, button.btn4, button.btn5{
+        width: 35%;
+        height: 50px;
+        background: #000;
+        color: #fff;
+        padding: 10px 25px;
+        border: 2px solid #000;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+    }
+
+    article > div.one > div.frame > button.btn1 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+
+    /*------------------------------------------------------*/
+    article > div.one > div.msg-container{
+        width: 100%;
+        height: 1350px;
+        background-color: rgb(238, 232, 170, 0.5);
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col{
+        width: 360px;
+        height: 300px;
+        margin: 15px;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > h1{
+        font-size: 40px;
+        font-weight: 900;
+        /*margin-top: 10px 0px 0px 75px;*/
+        margin-top: 15px;
+        margin-left: 6%;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > p{
+        color: #000;
+        font-size: 19px;
+        /*margin: 0px 75px 0px 75px;*/
+        margin-left: 8%;
+        margin-right: 10%;
+        padding-right: 3%;
+        line-height: 38px;
+        font-weight: bold;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div > img{
+        width: 55%;
+        height: 100%;
+        margin: 0px 10px 10px 65px;
+        padding-top: 20px;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > a{
+    margin-top: 3%;
+    margin-left: 6%;
+    }
+
+  footer > div{
+    padding: 12%;
+  }
+
+  footer > div > div{
+    width: 100%;
+  }
+
+  footer > div > div.wordbox{
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  footer > div > div.linkbox{
+    float: left;  
+    padding-left: 20px;
+  }
+}
+/*------------------------------------------------------*/
+@media screen and (min-width: 320px) and (max-width: 359px) {
+    #menubtn{
+        display: block;
+        width: 41px;
+        height: 37px;
+        background-size: 100% 100%;
+        float: right;
+    }
+
+    header > nav{
+        transition: height 0.3s;
+        height: 37px;
+        overflow: hidden;
+    }
+
+    header > nav.open{
+        height: 155px;
+    }
+
+    header > nav > h1 > a{
+        line-height: 37px;
+        padding-left: 20px;
+    }
+
+    header > nav > div > a{
+        line-height: 37px;
+        padding-left: 20px;
+    }
+
+    article{
+      display: block;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      /*background-size: cover;*/
+      background-image: url('../images/introduce.png');
+      background-position: 50%0%;
+    }
+
+    article > div.one{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        /*justify-content: space-between;*/
+        padding: 24px 0px 84px 0px;
+    }
+
+    article > div.one > div.frame{
+        width: 100%;
+        height: 300px;
+        /*background-color: #8A2BE2;*/
+        margin: 0px auto;
+        text-align: center;
+        display: block;
+        /*flex-direction: row;*/
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    button {
+      margin: 20px;
+      outline: none;
+    }
+
+    article > div.one > div.frame > button.btn1, button.btn2, button.btn3, button.btn4, button.btn5{
+        width: 35%;
+        height: 50px;
+        background: #000;
+        color: #fff;
+        padding: 10px 25px;
+        border: 2px solid #000;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+    }
+
+    article > div.one > div.frame > button.btn1 {
+      background: #8C573B;
+      color: #fff;
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+
+    /*------------------------------------------------------*/
+    article > div.one > div.msg-container{
+        width: 100%;
+        height: 1350px;
+        background-color: rgb(238, 232, 170, 0.5);
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col{
+        width: 320px;
+        height: 300px;
+        margin: 15px;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > h1{
+        font-size: 40px;
+        font-weight: 900;
+        /*margin-top: 10px 0px 0px 75px;*/
+        margin-top: 15px;
+        margin-left: 6%;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > p{
+        color: #000;
+        font-size: 16px;
+        /*margin: 0px 75px 0px 75px;*/
+        margin-left: 8%;
+        margin-right: 10%;
+        padding-right: 3%;
+        line-height: 38px;
+        font-weight: bold;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > div > img{
+        width: 60%;
+        height: 100%;
+        margin: 0px 10px 10px 45px;
+        padding-top: 20px;
+    }
+
+    article > div.one > div.msg-container > div.slider > div.msg-col > a{
+    margin-top: 3%;
+    margin-left: 6%;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 10px 10px;
+    border-radius: 30px;
+    }
+
+    footer > div{
+        padding: 12%;
+    }
+
+    footer > div > div{
+        width: 100%;
+    }
+
+    footer > div > div.wordbox{
+        float: left;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    footer > div > div.linkbox{
+        float: left;    
+        padding-left: 20px;
+    }
+}

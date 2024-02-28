@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Cantonese 闖粵憑交道"> <!-- 分享的標題  -->
+    <meta property="og:description" content="嘉大數位系學生團隊全新製作，Android 粵語學習App全新登場"> <!-- 分享的內容敘述 -->
+    <meta property="og:url" content="https://natsu72258.github.io/new-arkone/"> <!-- 分享的網頁連結 -->
+    <meta property="og:image" content="https://chtong6.github.io/PPP/%E5%9C%96.png"> <!--分享在FB的縮圖 -->
+    <title>闖粵憑交道</title>
+    <link href="css/test.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    
+  <header>
+    <nav class="">
+      <h1><a href="index.html">闖粵憑交道</a></h1>
+      <a id="menubtn" href="javascript:;"></a>
+      <div>
+        <a href="index2.html">製作理念</a>
+        <a href="playpage.html">使用介紹</a>
+        <a href="videopage.html">學習映像</a>
+      </div>
+    </nav>
+  </header>
+
+  <article>
+    <div class="pt">
+      <div class="an">
+        <div class="ot"></div>
+        <div class="many">
+          <h1 align="center">宣傳PV</h1>
+          <h1 align="center">下載專區</h1>
+          <a href="index2.html"><img src="images/PLAY_2.png"></a>
+          <a href="index2.html"><img src="images/PLAY_2.png"></a>
+        </div>
+      </div>
+      <img src="images/univer.png">
+    </div>
+  </article>
+
+  <aside>
+    <div>
+      <h4>嘉義大學<br>數位學習設計與管理學系製作<br>最新粵語學習App!</h4>
+      <p>透過數位學習，闖入粵語的世界，<br>憑藉新學的第二外語
+      ，來和更多的人進行交流！<br>學習，隨手可得!</p>
+    </div>
+  </aside>
+
+  <main>
+    <div>
+      <div class="leftbox">
+        <h2>文字口語雙力齊下</h2>
+        <p>想學好粵語，聽說讀寫的均衡發展，<br>才是學習最有效的方式! <br>透過聽力、閱讀、口說等密集訓練，<br>大幅提高記憶量，建立思考運作的邏輯，<br>讓學習不再有壓力，隨時隨地學好粵語！</p>
+      </div>
+      <div class="rightbox">
+        <img src="https://chtong6.github.io/PPP/PRT.png">
+      </div>
+    </div>
+  </main>
+
+  <section id="s1">
+    <div>
+      <div class="lb">
+      <img src="https://chtong6.github.io/PPP/PRT2.png">
+    </div>
+    <div class="rb">
+      <h5>最新課程內容<br>接軌國際</h5>
+          <ol>
+            <li>母語人士的道地口音教學</li>
+            <li>貼近生活的專業教學內容</li>
+            <li>教材皆以ARCS為基礎設計</li>
+            <li>多位受試者拍手說讚!</li>
+          </ol>
+    </div>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <button type="button" id="BackTop" class="toTop-arrow"></button>
+    <script>
+    $(function(){
+      $('#BackTop').click(function(){ 
+        $('html,body').animate({scrollTop:0}, 333);
+      });
+      $(window).scroll(function() {
+        if ( $(this).scrollTop() > 300 ){
+          $('#BackTop').fadeIn(222);
+        } else {
+          $('#BackTop').stop().fadeOut(222);
+        }
+      }).scroll();
+    });
+    </script>
+
+  <footer>
+    <div>
+      <div class="wordbox">
+        <h6>關於我們</h6>
+        <a href="peoplepage.html">創作人員</a>
+        <a href="javascript:;">下載連結</a>
+        
+      </div>
+      <div class="linkbox">
+        <h3>社群分享</h3>
+        <a id="FB" href="javascript:;">
+              <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
+          </a>
+      </div>
+    </div>
+    </footer>
+
+</body>
+</html>

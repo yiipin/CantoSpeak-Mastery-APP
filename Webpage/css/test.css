@@ -1,0 +1,1026 @@
+@import url("reset.css");
+*{
+  margin:0;
+  padding:0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  font-family: "Microsoft JhengHei","Heiti TC","sans-serif";
+}
+img{
+    display: block;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#menubtn{
+  display: none;
+}
+
+header{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: #373c3f;
+}
+
+header > nav{
+  width: 1024px;
+  height: 97px;
+  margin: 0 auto;
+}
+
+header > nav > h1 > a{
+  line-height: 97px;
+  font-size: 18px;
+  color: #fff;
+  float: left;
+}
+
+header > nav > h1 > a:hover{
+  color: #00FFFF;
+}
+
+header > nav > div{
+  font-size: 18px;
+  color: #fff;
+  float: right;
+}
+
+header > nav > div > a{
+  display: block;
+  line-height: 97px;
+  float: left;
+  padding: 0 10px;
+  color: #fff;
+}
+
+header > nav > div > a:hover{
+  color: #00FFFF;
+}
+/*------------------------------------------------------*/
+article{
+  width: 100%;
+  height: 1080px;
+  overflow: hidden;
+  display: flex
+}
+
+article > div.pt{
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  top: 97px;
+  left: 0px;
+  position: absolute;
+}
+article > div.pt > div.an{
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+
+article > div.pt > div.an > div.ot{
+  width: 100%;
+  height: 1080px;
+  position: absolute;
+  z-index: 2;
+  background-color: #ccc;
+  opacity: 0.5;
+}
+
+article > div.pt > div.an > div.many{
+  width: 100%;
+  height: 1080px;
+  position: absolute;
+  overflow: hidden;
+
+  z-index: 3;
+}
+
+article > div.pt > div.an > div.many > iframe{
+  width: 80%;
+  height: 30%;
+  margin-left: 40px;
+}
+
+article > div.pt > div.an > div.many > h1{
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+article > div.pt > div.an > div.many > a >img{
+  width: 90%;
+  height: auto;
+}
+
+aside{
+  position: relative;
+  width: 100%;
+  height: 495px;
+  overflow: hidden;
+  background-image: url('../images/whitetrain.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+aside > div{
+  position: absolute;
+  width: 100%;
+  height: 495px;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0, 0.05);
+  background-size: cover;
+}
+
+aside > div > h4{
+  font-size: 60px;
+  color: #FFA500;
+  text-align: center;
+  padding-top: 20px;
+}
+
+aside > div > p{
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 40px;
+  line-height: 60px;
+}
+
+/*------------------------------------------------------*/
+main{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-image: url('../images/whitetrain.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main > div{
+  width: 1024px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 51px 84px 100px 84px;
+}
+
+main > div > div{
+  width: 45%;
+  height: auto;
+  overflow: hidden;
+}
+
+main > div > div.leftbox{
+  float: left;
+  padding-top: 55px;
+}
+
+main > div > div.rightbox{
+  float: right;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+main > div > div.rightbox > img{
+  width: 120%;
+  height: 130%;
+}
+
+main > div > div > p{
+  font-size: 21px;
+  color: #515151;
+  padding-top: 46px;
+}
+
+div.leftbox > h2{
+  font-size: 45px;
+  color: #088ca5;
+}
+/*------------------------------------------------------*/
+section#s1{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-image: url('../images/whitetrain.png');
+  background-repeat: no-repeat;
+  background-position: 0% 89%;
+  background-size: cover;
+}
+
+section#s1 > div{
+  width: 1024px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 51px 84px 100px 84px;
+}
+
+section#s1 > div > div{
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+}
+
+section#s1 > div > div.lb{
+  float: left;
+  padding-top: 20px;
+}
+
+section#s1 > div > div.lb > img{
+  width: 100%;
+  height: 120%;
+}
+
+section#s1 > div > div.rb{
+  float: right; 
+  padding-top: 55px;
+  padding-left: 150px;
+}
+
+section#s1 > div > div > ol{
+  font-size: 22px;
+  color: #515151;
+  padding-top: 46px;
+}
+
+div.rb > h5{
+  font-size: 45px;
+  color: #088ca5;
+}
+/*------------------------------------------------------*/
+.toTop-arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 33%;
+  opacity: 0.6;
+  background: #000;
+  cursor: pointer;
+  position:fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+  width: 18px;
+  height: 5px;
+  border-radius: 3px;
+  background: #f90;
+  position: absolute;
+  content: "";
+}
+.toTop-arrow::before {
+  transform: rotate(-45deg) translate(0, -50%);
+  left: 0.5rem;
+}
+.toTop-arrow::after {
+  transform: rotate(45deg) translate(0, -50%);
+  right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;}
+ 
+ 
+/* 48px */
+.toTop-arrow {
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 33%;
+  opacity: 0.6;
+  background: #000;
+  cursor: pointer;
+  position:fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+  width: 25px;
+  height: 6px;
+  border-radius: 3px;
+  background: #f90;
+  position: absolute;
+  content: "";
+}
+.toTop-arrow::before {
+  transform: rotate(-45deg) translate(0, -50%);
+  left: 0.42rem;
+}
+.toTop-arrow::after {
+  transform: rotate(45deg) translate(0, -50%);
+  right: 0.42rem;
+}
+.toTop-arrow:focus {outline: none;}
+ 
+/* 56px */
+.toTop-arrow {
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 33%;
+  opacity: 0.6;
+  background: #000;
+  cursor: pointer;
+  position:fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+  width: 31px;
+  height: 7px;
+  border-radius: 3px;
+  background: #f90;
+  position: absolute;
+  content: "";
+}
+.toTop-arrow::before {
+  transform: rotate(-45deg) translate(0, -50%);
+  left: 0.4rem;
+}
+.toTop-arrow::after {
+  transform: rotate(45deg) translate(0, -50%);
+  right: 0.4rem;
+}
+.toTop-arrow:focus {outline: none;}
+/*------------------------------------------------------*/
+footer{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: #373c3f;
+}
+
+footer > div{
+  width: 1024px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 10px 0px 0px 80px;
+}
+
+footer > div > div{
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+}
+
+footer > div > div.wordbox{
+  float: left;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+footer > div > div.linkbox{
+  float: right; 
+  padding-top: 30px;
+  padding-left: 100px;
+}
+
+div.wordbox > h6{
+  font-size: 30px;
+  color: #fff;
+}
+
+div.wordbox > a{
+  font-size: 20px;
+  padding-top: 20px;
+  line-height: 20px;
+  color: #fff;
+  font-family: "Microsoft JhengHei","sans-serif";
+}
+
+div.linkbox > h3{
+  font-size: 30px;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+#FB{
+     color: #fff;
+}
+
+/*------------------------------------------------------*/
+@media screen and (max-width: 1024px) {
+  header > nav, article > div, aside > div, main > div, section > div, footer > div{
+    width: 100%;
+  }
+
+  header > nav > h1 > a{
+    padding-left: 30px;
+  }
+
+  header > nav > div > a{
+    line-height: 97px;
+    padding: 0 10px;
+    padding-right: 20px;
+  }
+
+  article > div.an > h2.link {
+    width: 101%;
+    margin: 0 auto;
+    height: 26.5%;
+  }
+
+  article > div.an > h3.link2 {
+    width: 101%;
+    margin: 0 auto;
+    height: 25.5%;
+  }
+  
+  article > div.an > iframe{
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+  }
+  article > div.an > a > img{
+  height: 23%;
+  }
+
+  footer > div{
+  padding: 10px 50px 20px 170px;
+  }
+}
+/*------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  #menubtn{
+    display: block;
+    width: 82px;
+    height: 74px;
+    background-image: url('../images/menu.jpg');
+    float: right;
+  }
+  header > nav{
+    transition: height 0.3s;
+    height: 74px;
+    overflow: hidden;
+  }
+
+  header > nav.open{
+    height: 310px;
+  }
+
+  header > nav > h1 > a{
+    line-height: 74px;
+  }
+
+  header > nav > div{
+    clear: both;
+    padding-left: 0px;
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+
+  header > nav > div > a{
+    line-height: 74px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-left: 30px;
+  }
+
+  article{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #ccc;
+    display: flex;
+    justify-content: normal;
+    flex-direction: column-reverse;
+  }
+
+  article > div.an{
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+    float: left;
+    display: flex;
+    flex-direction: column;
+  }
+
+  article > div.an > h2.link {
+    width: 100%;
+    margin: 0px 0px 0px 5px;
+    height: 100%;
+    padding-top: 80px;
+  }
+
+  article > div.an > h2.link > a {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 101%;
+  }
+
+  article > div.an > h3.link2 {
+    width: 100%;
+    margin: 0px 10px 0px 5px;
+    height: 105%;
+    padding-top: 70px;
+  }
+
+  article > div.an > iframe{
+    width: 100%;
+    height: 120%;
+    overflow: hidden;
+  }
+
+  article > div.pt{
+    width: 100%;
+    height: auto;
+    float: right;
+  }
+  article > div.pt > img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  aside{
+    height: 335px;
+  }
+
+  aside > div{
+    height: 335px;
+  }
+
+  aside > div > h4{
+    font-size: 35px;
+    padding-top: 20px;
+  }
+
+  aside > div > p{
+    font-size: 25px;
+    padding-top: 20px;
+    line-height: 48px;
+  }
+
+  main > div{
+    padding: 12%;
+  }
+  main > div > div{
+    width: 100%;
+  }
+
+  main > div > div.leftbox{
+    float: left;
+    padding-top: 55px;
+    padding-left: 38px;
+  }
+
+  main > div > div.rightbox{
+    float: right;
+    margin-right: 23px;
+    padding-top: 20px;
+  }
+
+  main > div > div.rightbox > img{
+  width: 100%;
+  height: 100%;
+  }
+
+  main > div > div > p{
+    font-size: 23px;
+    color: #515151;
+    padding-top: 46px;
+    line-height: 38px;
+  }
+
+  main > div > div > img{
+    width: 90%;
+    height: auto;
+  }
+
+  div.leftbox > h2{
+    font-size: 50px;
+    color: #088ca5;
+  }
+
+  section#s1 > div{
+    padding: 12%;
+  }
+
+  section#s1 > div > div{
+    width: 100%;
+  }
+
+  section#s1 > div > div.lb{
+    float: left;
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+
+  section#s1 > div > div.lb > img{
+    width: 55%;
+    height: 70%;
+  }
+
+  section#s1 > div > div.rb{
+    float: right; 
+    padding-top: 55px;
+    margin-right: 110px;
+  }
+
+  section#s1 > div > div > ol{
+    font-size: 27px;
+    color: #515151;
+    padding-top: 46px;
+    line-height: 48px;
+    padding-left: 40px;
+  }
+
+  div.rb > h5{
+    font-size: 50px;
+    color: #088ca5;
+    padding-left: 40px;
+  }
+
+  footer > div > div.linkbox{ 
+  padding-left: 20px;
+  }
+
+  footer > div{
+  padding: 10px 0px 10px 100px;
+  }
+}
+/*------------------------------------------------------*/
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+
+    #menubtn{
+        display: block;
+        width: 60px;
+        height: 53px;
+        background-size: 100% 100%;
+        float: right;
+    }
+
+    header > nav{
+        transition: height 0.3s;
+        height: 53px;
+        overflow: hidden;
+    }
+
+    header > nav.open{
+        height: 220px;
+    }
+
+    header > nav > h1 > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+    header > nav > div > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+    article > div.an{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    float: left;
+    display: flex;
+    flex-direction: column;
+  }
+
+    article > div.an > h2.link {
+    width: 100%;
+    margin: 0px 0px 0px 5px;
+    height: 28%;
+    padding-top: 200px;
+  }
+
+  article > div.an > h2.link > a {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 101%;
+  }
+
+  article > div.an > h3.link2 {
+    width: 100%;
+    margin: 0px 10px 0px 5px;
+    height: 28%;
+    padding-top: 190px;
+  }
+
+  article > div.an > iframe{
+    height: 250px;
+  }
+
+  aside{
+    height: 300px;
+  }
+
+  aside > div{
+    height: 300px;
+  }
+
+  aside > div > h4{
+    font-size: 35px;
+    padding-top: 30px;
+  }
+
+  aside > div > p{
+    font-size: 20px;
+    padding-top: 10px;
+    line-height: 38px;
+  }
+
+  main > div{
+    padding: 11%;
+  }
+  main > div > div{
+    width: 100%;
+  }
+
+  main > div > div.leftbox{
+    float: left;
+    padding-top: 45px;
+    padding-left: 20px;
+  }
+
+  main > div > div.rightbox{
+    float: left;
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+
+  main > div > div.rightbox > img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  main > div > div > p{
+    font-size: 1.2em;
+    color: #515151;
+    padding-top: 46px;
+    line-height: 38px;
+  }
+
+  main > div > div > img{
+    width: 120%;
+    height: auto;
+  }
+
+  div.leftbox > h2{
+    font-size: 40px;
+    color: #088ca5;
+  }
+
+  section#s1 > div{
+    padding: 11%;
+  }
+
+  section#s1 > div > div{
+    width: 100%;
+  }
+
+  section#s1 > div > div.lb{
+    float: left;
+    padding-top: 20px;
+    padding-right: 30px;
+    margin-right: 20px;
+  }
+
+  section#s1 > div > div.rb{
+    float: right; 
+    padding-top: 55px;
+    margin-right: 140px;
+  }
+
+  section#s1 > div > div.lb > img{
+    width: 40%;
+    height: 70%;
+  }
+
+  section#s1 > div > div > ol{
+    font-size: 20px;
+    color: #515151;
+    padding-top: 46px;
+    line-height: 38px;
+    padding-left: 50px;
+  }
+
+
+  div.rb > h5{
+    font-size: 45px;
+    color: #088ca5;
+    padding-left: 45px;
+  }
+
+    footer > div > div.linkbox{ 
+    padding-left: 10px;
+    }
+
+    footer > div{
+    padding: 10px 0px 10px 60px;
+    }
+}
+/*------------------------------------------------------*/
+@media only screen and (min-width: 0px) and (max-width: 320px) {
+  #menubtn{
+    display: block;
+    width: 41px;
+    height: 37px;
+    background-size: 100% 100%;
+    float: right;
+  }
+
+  header > nav{
+    transition: height 0.3s;
+    height: 37px;
+    overflow: hidden;
+  }
+
+  header > nav.open{
+    height: 155px;
+  }
+
+  header > nav > h1 > a{
+    line-height: 37px;
+    padding-left: 20px;
+  }
+
+  header > nav > div > a{
+    line-height: 37px;
+    padding-left: 20px;
+  }
+
+  article > div.an{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    float: left;
+    display: flex;
+    flex-direction: column;
+  }
+
+    article > div.an > h2.link {
+    width: 100%;
+    margin: 0px 0px 0px 5px;
+    height: 13%;
+    padding-top: 130px;
+  }
+
+  article > div.an > h2.link > a {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 100%;
+  }
+
+  article > div.an > h3.link2 {
+    width: 100%;
+    margin: 0px 10px 0px 5px;
+    height: 13%;
+    padding-top: 130px;
+  }
+
+  article > div.an > iframe{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  article > div.pt{
+    width: 100%;
+    height: auto;
+    float: right;
+  }
+  article > div.pt > img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  aside{
+    height: 300px;
+  }
+
+  aside > div{
+    height: 300px;
+  }
+
+  aside > div > h4{
+    font-size: 24px;
+    padding-top: 40px;
+  }
+
+  aside > div > p{
+    font-size: 15px;
+    padding-top: 15px;
+    line-height: 35px;
+  }
+
+  main > div > div.leftbox{
+    float: left;
+    padding-top: 55px;
+    padding-left: 20px;
+  }
+
+  main > div > div.rightbox{
+    float: left;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+
+  main > div > div.rightbox > img{
+    width: 105%;
+    height: 100%;
+  }
+
+  main > div > div > p{
+    font-size: 1.3em;
+    color: #515151;
+    padding-top: 30px;
+    line-height: 43px;
+  }
+
+  div.leftbox > h2{
+    font-size: 50px;
+    color: #088ca5;
+  }
+/*------------------------------------------------------*/
+  section#s1 > div{
+    padding: 12%;
+  }
+
+  section#s1 > div > div{
+    width: 100%;
+  }
+
+  section#s1 > div > div.lb{
+    float: left;
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+
+  section#s1 > div > div.lb > img{
+    width: 28%;
+    height: 100%;
+  }
+
+  section#s1 > div > div.rb{
+    float: left;  
+    padding-top: 55px;
+    padding-left: 10px;
+  }
+
+  section#s1 > div > div > ol{
+    font-size: 20px;
+    color: #515151;
+    padding-top: 30px;
+    line-height: 38px;
+    padding-left: 0px;
+  }
+
+  div.rb > h5{
+    font-size: 40px;
+    color: #088ca5;
+    padding-left: 0px;
+  }
+/*------------------------------------------------------*/
+  footer > div{
+    padding: 12%;
+  }
+
+  footer > div > div{
+    width: 100%;
+  }
+
+  footer > div > div.wordbox{
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  footer > div > div.linkbox{
+    float: left;  
+    padding-left: 20px;
+  }
+
+}

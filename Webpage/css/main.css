@@ -1,0 +1,2356 @@
+@import url("reset.css");
+*{
+  margin:0;
+  padding:0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  font-family: "Microsoft JhengHei","Heiti TC","sans-serif";
+}
+img{
+    display: block;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#menubtn{
+  display: none;
+}
+
+header{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: #8C573B;
+}
+
+header > nav{
+  width: 1024px;
+  height: 97px;
+  margin: 0 auto;
+}
+
+header > nav > h1 > a{
+  line-height: 97px;
+  font-size: 18px;
+  color: white;
+  float: left;
+  font-weight: bold;
+}
+
+header > nav > h1 > a:hover{
+  text-decoration: none;
+  color: #FFD700;
+}
+
+header > nav > div{
+  font-size: 18px;
+  float: right;
+}
+
+header > nav > div > a{
+  display: block;
+  line-height: 97px;
+  float: left;
+  padding: 0 10px;
+  color: white;
+  font-weight: bold;
+}
+
+header > nav > div > a:hover{
+  text-decoration: none;
+  color: #FFD700;
+}
+/*------------------------------------------------------*/
+article{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+article > div.pt > div.container{
+  height: auto;
+  position: absolute;
+  top: 7px;
+  left: 0px;
+  z-index: 2;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+article > div.pt > div.container > ul.acc{
+  margin: 90px 0px 0px 0px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  left: 0px;
+  z-index: 2;
+  background-color: #00000000;
+}
+
+article > div.pt > div.container > ul.acc > li{
+  list-style-type: none;
+  padding: 0;
+}
+
+article > div.pt > div.container > ul.acc > li > button > h2{
+  color: #FFFFFF;
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+article > div.pt > div.container > ul.acc > li > button.acc_ctrl{
+  background: #00000000;
+  opacity: 1;
+  border: none;
+  border-right: none;
+  border-bottom: none;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  padding: 2em;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+article > div.pt > div.container > ul.acc > li > button.acc_ctrl:hover{
+  background: #fff7d8;
+}
+
+article > div.pt > div.container > ul.acc > li > button.acc_ctrl::before{
+  background: #FFFFFF;
+  content: '';
+  height: 2px;
+  margin-right: 10px;
+  position: absolute;
+  right: 0;
+  top: 47%;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 14px;
+}
+
+article > div.pt > div.container > ul.acc > li > button.acc_ctrl::after{
+  background: #FFFFFF;
+  content: '';
+  height: 2px;
+  margin-right: 10px;
+  position: absolute;
+  right: 0;
+  top: 47%;
+  width: 14px;
+}
+
+article > div.pt > div.container > ul.acc > li > button.acc_ctrl.active::before{
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+article > div.pt > div.container > ul.acc > li > button.acc_ctrl.active > h2, button.acc_ctrl:focus > h2{
+  position: relative;
+}
+
+article > div.pt > div.container > ul.acc > li > div.acc_panel{
+  background: #00000000;
+  overflow: hidden;
+  display: none;
+  width: 100%;
+}
+
+article > div.pt > div.container > ul.acc > li > div.acc_panel > iframe{
+  width: 100%;
+  height: auto;
+}
+
+article > div.pt > div.container > ul.acc > li > div.acc_panel > a >img{
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+aside{
+  position: relative;
+  width: 100%;
+  height: 595px;
+  overflow: hidden;
+  background-color: #FFDCA3;
+}
+
+aside > div{
+  position: absolute;
+  width: 100%;
+  height: 595px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+aside > div > h4{
+  font-size: 50px;
+  color: #181818;
+  text-align: center;
+  padding-top: 80px;
+  font-weight: bold;
+  line-height: 70px;
+}
+
+aside > div > p{
+  font-size: 25px;
+  color: #6B6B6B;
+  text-align: center;
+  padding-top: 30px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+div.phone{
+  display: none;
+}
+
+
+main{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-image: url('../images/point.png');
+}
+main > div{
+  width: 1024px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 51px 84px 100px 84px;
+}
+
+main > div > div{
+  width: 45%;
+  height: auto;
+  overflow: hidden;
+}
+
+main > div > div.leftbox{
+  float: left;
+  padding-top: 55px;
+}
+
+main > div > div.rightbox{
+  float: right;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+main > div > div.rightbox > img{
+  width: 120%;
+  height: 130%;
+}
+
+main > div > div > p{
+  font-size: 21px;
+  color: #6B6B6B;
+  padding-top: 46px;
+  font-weight: bold;
+}
+
+div.leftbox > h2{
+  font-size: 45px;
+  color: #181818;
+  font-weight: bold;
+}
+/*------------------------------------------------------*/
+section#s1{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: #FFDCA3;
+}
+
+section#s1 > div{
+  width: 1024px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 51px 84px 100px 84px;
+}
+
+section#s1 > div > div{
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+}
+
+section#s1 > div > div.lb{
+  float: left;
+  padding-top: 20px;
+}
+
+section#s1 > div > div.lb > img{
+  width: 100%;
+  height: 120%;
+}
+
+section#s1 > div > div.rb{
+  float: right; 
+  padding-top: 55px;
+  padding-left: 150px;
+}
+
+section#s1 > div > div > ol{
+  font-size: 22px;
+  color: #6B6B6B;
+  padding-top: 46px;
+  font-weight: bold;
+}
+
+div.rb > h5{
+  font-size: 45px;
+  color: #181818;
+  font-weight: bold;
+}
+/*------------------------------------------------------*/
+.toTop-arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 33%;
+  opacity: 0.6;
+  background: #000;
+  cursor: pointer;
+  position:fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+  width: 18px;
+  height: 5px;
+  border-radius: 3px;
+  background: #f90;
+  position: absolute;
+  content: "";
+}
+.toTop-arrow::before {
+  transform: rotate(-45deg) translate(0, -50%);
+  left: 0.5rem;
+}
+.toTop-arrow::after {
+  transform: rotate(45deg) translate(0, -50%);
+  right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;}
+ 
+ 
+/* 48px */
+.toTop-arrow {
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 33%;
+  opacity: 0.6;
+  background: #000;
+  cursor: pointer;
+  position:fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+  width: 25px;
+  height: 6px;
+  border-radius: 3px;
+  background: #f90;
+  position: absolute;
+  content: "";
+}
+.toTop-arrow::before {
+  transform: rotate(-45deg) translate(0, -50%);
+  left: 0.42rem;
+}
+.toTop-arrow::after {
+  transform: rotate(45deg) translate(0, -50%);
+  right: 0.42rem;
+}
+.toTop-arrow:focus {outline: none;}
+ 
+/* 56px */
+.toTop-arrow {
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 33%;
+  opacity: 0.6;
+  background: #000;
+  cursor: pointer;
+  position:fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+  width: 31px;
+  height: 7px;
+  border-radius: 3px;
+  background: #f90;
+  position: absolute;
+  content: "";
+}
+.toTop-arrow::before {
+  transform: rotate(-45deg) translate(0, -50%);
+  left: 0.4rem;
+}
+.toTop-arrow::after {
+  transform: rotate(45deg) translate(0, -50%);
+  right: 0.4rem;
+}
+.toTop-arrow:focus {outline: none;}
+/*------------------------------------------------------*/
+footer{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: #8C573B;
+}
+
+footer > div{
+  width: 1024px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 10px 0px 0px 80px;
+}
+
+footer > div > div{
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+}
+
+footer > div > div.wordbox{
+  float: left;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+footer > div > div.linkbox{
+  float: right; 
+  padding-top: 30px;
+  padding-left: 100px;
+}
+
+div.wordbox > h6{
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+footer > div > div.linkbox > div{
+  display: flex;
+}
+
+div.wordbox > a{
+  font-size: 20px;
+  padding-top: 20px;
+  line-height: 20px;
+  color: white;
+  font-family: "Microsoft JhengHei","sans-serif";
+  text-decoration: none;
+}
+
+div.wordbox > a:hover{
+  text-decoration: none;
+  color: #FFD700;
+}
+
+div.linkbox > h3{
+  font-size: 30px;
+  color: white;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+a.shareBtn{
+    display: block;
+    text-indent: -9999px;
+    width: 42px;
+    height: 42px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left:20px; 
+    margin-top: 2px;
+}
+a.pc{
+    background-image: url("../images/linebutton_gress.png");
+}
+a.mobile{
+    background-image: url("../images/linebutton_gress.png");
+}
+
+
+#FB{
+     color: rgb(30, 144, 255);
+}
+
+/*------------------------------------------------------*/
+@media screen and (max-width: 1024px) {
+  header > nav, article > div, aside > div, main > div, section > div, footer > div{
+    width: 100%;
+  }
+
+  header > nav > h1 > a{
+    padding-left: 30px;
+  }
+
+  header > nav > div > a{
+    line-height: 97px;
+    padding: 0 10px;
+    padding-right: 20px;
+  }
+
+  article > div.pt > div.container{
+   display: none;
+  }
+
+  div.phone{
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+
+  div.phone > div.vd{
+    width: 70%;
+    height: 310px;
+    background-color: #8C573B;
+    float: left;
+    display: flex;
+  }
+
+  div.phone > div.vd > div{
+    width: 90%;
+    
+  }
+
+  div.phone > div.vd > div.tw{
+    width: 10%;
+    
+  }
+
+  div.phone > div.vd > div > h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    color: #fff;
+  }
+
+  div.phone > div.vd > div > iframe{
+    width: 100%;
+    height: 310px;
+    
+  }
+
+  div.phone > div.lk{
+    width: 40%;
+    height: 310px;
+    background-color: #8C573B;
+    float: right;
+  }
+
+  div.phone > div.lk > div > a > img{
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    padding-top: 15%;
+    left: 23%;
+    opacity: 1;
+    transition: all 3s;
+  }
+
+  div.phone > div.lk > div > h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding-top: 5%;
+
+  }
+
+  div.phone > div.lk > div > a > img:hover{
+    opacity: 0;
+    left:80%;
+  }
+
+  footer > div{
+  padding: 10px 50px 20px 170px;
+  }
+}
+/*------------------------------------------------------*/
+@media screen and (max-width: 930px) {
+
+  aside{
+    height: 450px;
+  }
+
+  aside > div{
+    height: 450px;
+  }
+
+  aside > div > h4{
+    font-size: 35px;
+    padding-top: 50px;
+    line-height: 60px;
+  }
+
+  aside > div > p{
+    font-size: 25px;
+    padding-top: 10px;
+    line-height: 48px;
+  }
+
+  div.phone{
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+
+  div.phone > div.vd{
+    width: 70%;
+    height: 310px;
+    background-color: #8C573B;
+    display: flex;
+  }
+
+
+  div.phone > div.vd > div.tw{
+    width: 10%;
+    display: none;  
+  }
+
+  div.phone > div.vd > div > iframe{
+    width: 600px;
+    height: 310px;
+    
+  }
+
+  div.phone > div.lk{
+    width: 40%;
+    height: 310px;
+    background-color: #8C573B;
+  }
+
+  div.phone > div.lk > div > h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding-top: 4%;
+  }
+
+  div.phone > div.lk > div > a > img{
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    padding-top: 20%;
+    left: 23%;
+    opacity: 1;
+    transition: all 3s;
+  }
+
+   div.phone > div.lk > div > h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding-top: 5%;
+    margin-left: 10%;
+  }
+
+  main > div > div.leftbox{
+  	padding-top: 11%;
+  }
+
+  main > div > div.leftbox > h2{
+  	font-size: 40px;
+  }
+
+  main > div > div.leftbox > p{
+  	font-size: 20px;
+  }
+
+  main > div > div.rightbox{
+  	padding-top: 10%;
+  }
+
+  section#s1 > div{
+    padding: 2%;
+  }
+
+  section#s1 > div > div.lb{
+  	padding-top: 3%;
+
+  }
+
+  section#s1 > div > div.rb{
+  	padding-right: 0%;
+  	padding-left: 8%;
+  }
+
+}
+/*------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  #menubtn{
+    display: block;
+    width: 82px;
+    height: 74px;
+    background-image: url('../images/menured.png');
+    float: right;
+  }
+  header > nav{
+    transition: height 0.3s;
+    height: 74px;
+    overflow: hidden;
+  }
+
+  header > nav.open{
+    height: 310px;
+  }
+
+  header > nav > h1 > a{
+    line-height: 74px;
+  }
+
+  header > nav > div{
+    clear: both;
+    padding-left: 0px;
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+
+  header > nav > div > a{
+    line-height: 74px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-left: 30px;
+  }
+
+
+  aside{
+    height: 450px;
+  }
+
+  aside > div{
+    height: 450px;
+  }
+
+  aside > div > h4{
+    font-size: 35px;
+    padding-top: 50px;
+    line-height: 60px;
+  }
+
+  aside > div > p{
+    font-size: 25px;
+    padding-top: 10px;
+    line-height: 48px;
+  }
+
+  div.phone{
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+
+  div.phone > div.vd{
+    width: 70%;
+    height: 230px;
+    background-color: #8C573B;
+    display: flex;
+  }
+
+
+  div.phone > div.vd > div.tw{
+    width: 10%;
+    display: none;  
+  }
+
+  div.phone > div.vd > div > iframe{
+    width: 500px;
+    height: 230px;
+    
+  }
+
+  div.phone > div.lk{
+    width: 40%;
+    height: 230px;
+    background-color: #8C573B;
+  }
+
+  div.phone > div.lk > div > h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding-top: 4%;
+  }
+
+  div.phone > div.lk > div > a > img{
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    padding-top: 18%;
+    left: 23%;
+    opacity: 1;
+    transition: all 3s;
+  }
+
+  div.phone > div.lk > div > h2{
+    margin-left: 0%;
+  }
+
+  main > div{
+    padding: 12%;
+  }
+  main > div > div{
+    width: 100%;
+  }
+
+  main > div > div.leftbox{
+    float: left;
+    padding-top: 10%;
+    padding-left: 16%;
+  }
+
+  main > div > div.rightbox{
+    float: right;
+    margin-right: 23px;
+    padding-top: 7%;
+  }
+
+  main > div > div.rightbox > img{
+    width: 100%;
+    height: 100%;
+  }
+
+  main > div > div > img{
+    width: 90%;
+    height: auto;
+  }
+
+  main > div > div.leftbox > h2{
+    font-size: 45px;
+  }
+
+  main > div > div.leftbox > p{
+  	font-size: 25px;
+  	line-height: 45px;
+  	padding-top: 8%;
+  }
+
+  section#s1 > div{
+    padding: 12%;
+  }
+
+  section#s1 > div > div{
+    width: 100%;
+  }
+
+  section#s1 > div > div.lb{
+    float: left;
+    padding-top: 3%;
+    padding-left: 8%;
+  }
+
+  section#s1 > div > div.lb > img{
+    width: 55%;
+    height: 70%;
+  }
+
+  section#s1 > div > div.rb{
+    float: right; 
+    padding-top: 10%;
+    padding-left: 11%;
+  }
+
+  section#s1 > div > div > ol{
+    font-size: 27px;
+    padding-top: 46px;
+    line-height: 48px;
+    padding-left: 40px;
+  }
+
+  div.rb > h5{
+    font-size: 50px;
+    padding-left: 40px;
+  }
+
+  footer > div > div.linkbox{ 
+  padding-left: 20px;
+  }
+
+  footer > div{
+  padding: 10px 0px 10px 100px;
+  }
+}
+/*------------------------------------------------------*/
+@media screen and (max-width: 640px) {
+  #menubtn{
+    display: block;
+    width: 82px;
+    height: 74px;
+    background-image: url('../images/menured.png');
+    float: right;
+  }
+  header > nav{
+    transition: height 0.3s;
+    height: 74px;
+    overflow: hidden;
+  }
+
+  header > nav.open{
+    height: 310px;
+  }
+
+  header > nav > h1 > a{
+    line-height: 74px;
+  }
+
+  header > nav > div{
+    clear: both;
+    padding-left: 0px;
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+
+  header > nav > div > a{
+    line-height: 74px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-left: 30px;
+  }
+
+
+  aside{
+    height: 450px;
+  }
+
+  aside > div{
+    height: 450px;
+  }
+
+  aside > div > h4{
+    font-size: 35px;
+    padding-top: 50px;
+    line-height: 60px;
+  }
+
+  aside > div > p{
+    font-size: 25px;
+    padding-top: 10px;
+    line-height: 48px;
+  }
+
+  div.phone{
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+
+  div.phone > div.vd{
+    width: 70%;
+    height: 230px;
+    background-color: #8C573B;
+    display: flex;
+  }
+
+  div.phone > div.vd > div{
+    width: 90%;
+    
+  }
+
+  div.phone > div.vd > div.tw{
+    width: 10%;
+    display: none;  
+  }
+
+  div.phone > div.vd > div > iframe{
+    width: 400px;
+    height: 230px;
+    
+  }
+
+  div.phone > div.lk{
+    width: 40%;
+    height: 230px;
+    background-color: #8C573B;
+  }
+
+  div.phone > div.lk > div > h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding-top: 4%;
+  }
+
+  div.phone > div.lk > div > a > img{
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    padding-top: 25%;
+    left: 20%;
+    opacity: 1;
+    transition: all 3s;
+  }
+
+  main > div{
+    padding: 12%;
+  }
+  main > div > div{
+    width: 100%;
+  }
+
+  main > div > div.leftbox{
+    float: left;
+    padding-top: 15%;
+    padding-left: 11%;
+  }
+
+  main > div > div.rightbox{
+    float: right;
+    margin-right: 23px;
+    padding-top: 20px;
+  }
+
+  main > div > div.rightbox > img{
+    width: 100%;
+    height: 100%;
+  }
+
+  main > div > div > p{
+    font-size: 23px;
+    padding-top: 46px;
+    line-height: 38px;
+  }
+
+  main > div > div > img{
+    width: 90%;
+    height: auto;
+  }
+
+  div.leftbox > h2{
+    font-size: 50px;
+  }
+
+  section#s1 > div{
+    padding: 12%;
+  }
+
+  section#s1 > div > div{
+    width: 100%;
+  }
+
+  section#s1 > div > div.lb{
+    float: left;
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+
+  section#s1 > div > div.lb > img{
+    width: 55%;
+    height: 70%;
+  }
+
+  section#s1 > div > div.rb{
+    float: right; 
+    padding-top: 55px;
+    margin-right: 0%;
+    padding-left: 5%;
+  }
+
+  section#s1 > div > div > ol{
+    font-size: 27px;
+    padding-top: 46px;
+    line-height: 48px;
+    padding-left: 40px;
+  }
+
+  div.rb > h5{
+    font-size: 50px;
+    padding-left: 40px;
+  }
+
+  footer > div > div.linkbox{ 
+  padding-left: 20px;
+  }
+
+  footer > div{
+  padding: 10px 0px 10px 100px;
+  }
+}
+/*------------------------------------------------------*/
+@media screen and (min-width: 501px) and (max-width: 540px) {
+
+    #menubtn{
+        display: block;
+        width: 60px;
+        height: 53px;
+        background-size: 100% 100%;
+        float: right;
+    }
+
+    header > nav{
+        transition: height 0.3s;
+        height: 53px;
+        overflow: hidden;
+    }
+
+    header > nav.open{
+        height: 220px;
+    }
+
+    header > nav > h1 > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+    header > nav > div > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+
+  aside{
+    height: 400px;
+  }
+
+  aside > div{
+    height: 400px;
+  }
+
+  aside > div > h4{
+    font-size: 35px;
+    padding-top: 9%;
+  }
+
+  aside > div > p{
+    font-size: 20px;
+    padding-top: 10px;
+    line-height: 38px;
+  }
+
+  div.phone > div.vd{
+    width: 70%;
+    height: 200px;
+    background-color: #8C573B;
+    display: flex;
+  }
+
+  div.phone > div.vd > div{
+    width: 90%;
+    
+  }
+
+
+  div.phone > div.vd > div > iframe{
+    width: 320px;
+    height: 200px;  
+  }
+
+  div.phone > div.lk{
+    width: 40%;
+    height: 200px;
+    background-color: #8C573B;
+  }
+
+  div.phone > div.lk > div > a > img{
+    padding-top: 25%;
+    left: 15%;
+  }
+
+  div.phone > div.lk > div > h2{
+  	padding-top: 5%;
+    padding-right: 15%;
+  }
+
+  main > div{
+    padding: 11%;
+  }
+  main > div > div{
+    width: 100%;
+  }
+
+  main > div > div.leftbox{
+    float: left;
+    padding-top: 45px;
+    padding-left: 7%;
+  }
+
+  main > div > div.rightbox{
+    float: left;
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+
+  main > div > div.rightbox > img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  main > div > div.leftbox > p{
+    font-size: 1.4em;
+    padding-top: 46px;
+    line-height: 38px;
+  }
+
+  main > div > div > img{
+    width: 120%;
+    height: auto;
+  }
+
+  div.leftbox > h2{
+    font-size: 40px;
+  }
+
+  section#s1 > div{
+    padding: 11%;
+  }
+
+  section#s1 > div > div{
+    width: 100%;
+  }
+
+  section#s1 > div > div.lb{
+    float: left;
+    padding-top: 20px;
+    padding-right: 0%;
+    margin-right: 5%;
+    padding-left: 3%;
+  }
+
+  section#s1 > div > div.rb{
+    float: right; 
+    padding-top: 55px;
+    margin-right: 2%;
+    
+  }
+
+  section#s1 > div > div.lb > img{
+    width: 40%;
+    height: 70%;
+  }
+
+  section#s1 > div > div > ol{
+    font-size: 20px;
+    padding-top: 46px;
+    line-height: 38px;
+    padding-left: 50px;
+  }
+
+
+  div.rb > h5{
+    font-size: 45px;
+    padding-left: 45px;
+  }
+
+    footer > div > div.linkbox{ 
+    padding-left: 10px;
+    }
+
+    footer > div{
+    padding: 10px 0px 10px 60px;
+    }
+}
+/*------------------------------------------------------*/
+@media screen and (min-width: 480px) and (max-width:500px) {
+
+    #menubtn{
+        display: block;
+        width: 60px;
+        height: 53px;
+        background-size: 100% 100%;
+        float: right;
+    }
+
+    header > nav{
+        transition: height 0.3s;
+        height: 53px;
+        overflow: hidden;
+    }
+
+    header > nav.open{
+        height: 220px;
+    }
+
+    header > nav > h1 > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+    header > nav > div > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+
+  aside{
+    height: 400px;
+  }
+
+  aside > div{
+    height: 400px;
+  }
+
+  aside > div > h4{
+    font-size: 35px;
+    padding-top: 9%;
+  }
+
+  aside > div > p{
+    font-size: 20px;
+    padding-top: 10px;
+    line-height: 38px;
+  }
+
+  div.phone > div.vd{
+    width: 70%;
+    height: 200px;
+    background-color: #8C573B;
+    display: flex;
+  }
+
+  div.phone > div.vd > div{
+    width: 90%;
+    
+  }
+
+
+  div.phone > div.vd > div > iframe{
+    width: 320px;
+    height: 200px;  
+  }
+
+  div.phone > div.lk{
+    width: 40%;
+    height: 200px;
+    background-color: #8C573B;
+  }
+
+  div.phone > div.lk > div > a > img{
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    padding-top: 39%;
+    left: 20%;
+    opacity: 1;
+    transition: all 3s;
+  }
+
+  main > div{
+    padding: 11%;
+  }
+  main > div > div{
+    width: 100%;
+  }
+
+  main > div > div.leftbox{
+    float: left;
+    padding-top: 45px;
+    padding-left: 20px;
+  }
+
+  main > div > div.rightbox{
+    float: left;
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+
+  main > div > div.rightbox > img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  main > div > div.leftbox > p{
+    font-size: 1.3em;
+    padding-top: 46px;
+    line-height: 38px;
+  }
+
+  main > div > div > img{
+    width: 120%;
+    height: auto;
+  }
+
+  main > div > div.leftbox > h2{
+    font-size: 43px;
+  }
+
+  section#s1 > div{
+    padding: 11%;
+  }
+
+  section#s1 > div > div{
+    width: 100%;
+  }
+
+  section#s1 > div > div.lb{
+    float: left;
+    padding-top: 20px;
+    padding-right: 30px;
+    margin-right: 20px;
+  }
+
+  section#s1 > div > div.rb{
+    float: right; 
+    padding-top: 55px;
+    margin-right: 4%;
+  }
+
+  section#s1 > div > div.lb > img{
+    width: 40%;
+    height: 70%;
+  }
+
+  section#s1 > div > div > ol{
+    font-size: 20px;
+    padding-top: 46px;
+    line-height: 38px;
+    padding-left: 50px;
+  }
+
+
+  div.rb > h5{
+    font-size: 45px;
+    padding-left: 45px;
+  }
+
+    footer > div > div.linkbox{ 
+    padding-left: 10px;
+    }
+
+    footer > div{
+    padding: 10px 0px 10px 60px;
+    }
+}
+/*------------------------------------------------------*/
+@media screen and (min-width: 420px) and (max-width: 479px){
+  #menubtn{
+        display: block;
+        width: 60px;
+        height: 53px;
+        background-size: 100% 100%;
+        float: right;
+    }
+
+    header > nav{
+        transition: height 0.3s;
+        height: 53px;
+        overflow: hidden;
+    }
+
+    header > nav.open{
+        height: 220px;
+    }
+
+    header > nav > h1 > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+    header > nav > div > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+
+  aside{
+    height: 350px;
+  }
+
+  aside > div{
+    height: 350px;
+  }
+
+  aside > div > h4{
+    font-size: 28px;
+    padding-top: 9%;
+    line-height: 50px;
+  }
+
+  aside > div > p{
+    font-size: 17px;
+    padding-top: 10px;
+    line-height: 38px;
+  }
+
+  div.phone > div.vd{
+    width: 70%;
+    height: 180px;
+    background-color: #8C573B;
+    display: flex;
+  }
+
+
+  div.phone > div.vd > div > iframe{
+    width: 280px;
+    height: 180px;  
+  }
+
+  div.phone > div.lk{
+    width: 40%;
+    height: 180px;
+    background-color: #8C573B;
+  }
+
+  div.phone > div.lk > div > a > img{
+    padding-top: 40%;
+    left: 23%;
+  }
+
+  main > div{
+    padding: 11%;
+  }
+  main > div > div{
+    width: 100%;
+  }
+
+  main > div > div.leftbox{
+    float: left;
+    padding-top: 13%;
+    padding-left: 6%;
+  }
+
+  main > div > div.rightbox{
+    float: left;
+    padding-top: 5%;
+    padding-right: 5%;
+  }
+
+  main > div > div.rightbox > img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  main > div > div.leftbox > p{
+    font-size: 1.1em;
+    padding-top: 46px;
+    line-height: 38px;
+  }
+
+  main > div > div > img{
+    width: 120%;
+    height: auto;
+  }
+
+  main > div > div.leftbox > h2{
+    font-size: 37px;
+  }
+
+  section#s1 > div{
+    padding: 11%;
+  }
+
+  section#s1 > div > div{
+    width: 100%;
+  }
+
+  section#s1 > div > div.lb{
+    float: left;
+    padding-top: 3%;
+    padding-right: 5%;
+    margin-right: 3%;
+  }
+
+  section#s1 > div > div.rb{
+    float: right; 
+    padding-top: 8%;
+    margin-right: 5%;
+  }
+
+  section#s1 > div > div.lb > img{
+    width: 37%;
+    height: 70%;
+  }
+
+  section#s1 > div > div.rb > ol{
+    font-size: 18px;
+    padding-top: 26px;
+    line-height: 38px;
+    padding-left: 50px;
+  }
+
+
+  div.rb > h5{
+    font-size: 35px;
+    padding-left: 50px;
+  }
+
+  footer > div{
+    padding: 20%;
+  }
+
+  footer > div > div{
+    width: 100%;
+  }
+
+  footer > div > div.wordbox{
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  footer > div > div.linkbox{
+    float: left;  
+    padding-left: 20px;
+  }
+}
+/*------------------------------------------------------*/
+@media screen and (min-width: 401px) and (max-width: 419px){
+  #menubtn{
+        display: block;
+        width: 60px;
+        height: 53px;
+        background-size: 100% 100%;
+        float: right;
+    }
+
+    header > nav{
+        transition: height 0.3s;
+        height: 53px;
+        overflow: hidden;
+    }
+
+    header > nav.open{
+        height: 220px;
+    }
+
+    header > nav > h1 > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+    header > nav > div > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+
+  aside{
+    height: 350px;
+  }
+
+  aside > div{
+    height: 350px;
+  }
+
+  aside > div > h4{
+    font-size: 28px;
+    padding-top: 9%;
+    line-height: 50px;
+  }
+
+  aside > div > p{
+    font-size: 17px;
+    padding-top: 10px;
+    line-height: 38px;
+  }
+
+  div.phone > div.vd{
+    width: 70%;
+    height: 180px;
+    background-color: #8C573B;
+    display: flex;
+  }
+
+
+  div.phone > div.vd > div > iframe{
+    width: 280px;
+    height: 180px;  
+  }
+
+  div.phone > div.lk{
+    width: 40%;
+    height: 180px;
+    background-color: #8C573B;
+  }
+
+  div.phone > div.lk > div > a > img{
+    padding-top: 43%;
+    left: 23%;
+  }
+
+  div.phone > div.lk > div > h2{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5%;
+    padding-left: 0%;
+  }
+
+  main > div{
+    padding: 11%;
+  }
+  main > div > div{
+    width: 100%;
+  }
+
+  main > div > div.leftbox{
+    float: left;
+    padding-top: 13%;
+    padding-left: 9%;
+  }
+
+  main > div > div.rightbox{
+    float: left;
+    padding-top: 3%;
+    padding-right: 3%;
+  }
+
+  main > div > div.rightbox > img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  main > div > div.leftbox > p{
+    font-size: 1em;
+    padding-top: 46px;
+    line-height: 38px;
+  }
+
+  main > div > div > img{
+    width: 120%;
+    height: auto;
+  }
+
+  main > div > div.leftbox > h2{
+    font-size: 33px;
+  }
+
+  section#s1 > div{
+    padding: 11%;
+  }
+
+  section#s1 > div > div{
+    width: 100%;
+  }
+
+  section#s1 > div > div.lb{
+    float: left;
+    padding-top: 20px;
+    padding-right: 3%;
+    margin-right: 5%;
+  }
+
+  section#s1 > div > div.rb{
+    float: right; 
+    padding-top: 5%;
+    margin-right: 3%;
+  }
+
+  section#s1 > div > div.lb > img{
+    width: 35%;
+    height: 70%;
+  }
+
+  section#s1 > div > div > ol{
+    font-size: 18px;
+    padding-top: 46px;
+    line-height: 38px;
+    padding-left: 35px;
+  }
+
+
+  div.rb > h5{
+    font-size: 35px;
+    padding-left: 35px;
+  }
+
+  footer > div{
+    padding: 20%;
+  }
+
+  footer > div > div{
+    width: 100%;
+  }
+
+  div.wordbox > h6{
+	  font-size: 40px;
+	}
+
+  div.wordbox > a{
+	 font-size: 30px;
+  }
+
+  div.linkbox > h3{
+	  font-size: 40px;
+  }
+
+  footer > div > div.wordbox{
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  footer > div > div.linkbox{
+    float: left;  
+    padding-left: 20px;
+  }
+}
+/*------------------------------------------------------*/
+@media screen and (min-width: 375px) and (max-width: 400px){
+  #menubtn{
+        display: block;
+        width: 60px;
+        height: 53px;
+        background-size: 100% 100%;
+        float: right;
+    }
+
+    header > nav{
+        transition: height 0.3s;
+        height: 53px;
+        overflow: hidden;
+    }
+
+    header > nav.open{
+        height: 220px;
+    }
+
+    header > nav > h1 > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+    header > nav > div > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+
+  	aside{
+    height: 350px;
+  }
+
+  aside > div{
+    height: 350px;
+  }
+
+  aside > div > h4{
+    font-size: 28px;
+    padding-top: 9%;
+    line-height: 50px;
+  }
+
+  aside > div > p{
+    font-size: 17px;
+    padding-top: 10px;
+    line-height: 38px;
+  }
+
+  div.phone > div.vd{
+    width: 70%;
+    height: 180px;
+    background-color: #8C573B;
+    display: flex;
+  }
+
+
+  div.phone > div.vd > div > iframe{
+    width: 280px;
+    height: 180px;  
+  }
+
+  div.phone > div.lk{
+    width: 40%;
+    height: 180px;
+    background-color: #8C573B;
+  }
+
+  div.phone > div.lk > div > a > img{
+    padding-top: 53%;
+    left: 30%;
+  }
+
+  div.phone > div.lk > div > h2{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5%;
+    padding-left: 13%;
+  }
+
+  main > div{
+    padding: 11%;
+  }
+  main > div > div{
+    width: 100%;
+  }
+
+  main > div > div.leftbox{
+    float: left;
+    padding-top: 45px;
+    padding-left: 20px;
+  }
+
+  main > div > div.rightbox{
+    float: left;
+    padding-top: 20px;
+    padding-right: 10px;
+  }
+
+  main > div > div.rightbox > img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  main > div > div.leftbox > p{
+    font-size: 1em;
+    padding-top: 46px;
+    line-height: 38px;
+  }
+
+  main > div > div > img{
+    width: 120%;
+    height: auto;
+  }
+
+  main > div > div.leftbox > h2{
+    font-size: 33px;
+  }
+
+  section#s1 > div{
+    padding: 11%;
+  }
+
+  section#s1 > div > div{
+    width: 100%;
+  }
+
+  section#s1 > div > div.lb{
+    float: left;
+    padding-top: 20px;
+    padding-right: 90px;
+    margin-right: 50px;
+  }
+
+  section#s1 > div > div.rb{
+    float: right; 
+    padding-top: 55px;
+    margin-right: 4%;
+  }
+
+  section#s1 > div > div.lb > img{
+    width: 35%;
+    height: 70%;
+  }
+
+  section#s1 > div > div > ol{
+    font-size: 18px;
+    padding-top: 46px;
+    line-height: 38px;
+    padding-left: 4%;
+  }
+
+
+  div.rb > h5{
+    font-size: 35px;
+    padding-left: 35px;
+  }
+
+  footer > div{
+    padding: 20%;
+  }
+
+  footer > div > div{
+    width: 100%;
+  }
+
+  footer > div > div.wordbox{
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  footer > div > div.linkbox{
+    float: left;  
+    padding-left: 20px;
+  }
+}
+/*------------------------------------------------------*/
+@media screen and (min-width: 360px) and (max-width: 374px) {
+  #menubtn{
+    display: block;
+    width: 41px;
+    height: 37px;
+    background-size: 100% 100%;
+    float: right;
+  }
+
+  header > nav{
+    transition: height 0.3s;
+    height: 37px;
+    overflow: hidden;
+  }
+
+  header > nav.open{
+    height: 155px;
+  }
+
+  header > nav > h1 > a{
+    line-height: 37px;
+    padding-left: 20px;
+  }
+
+  header > nav > div > a{
+    line-height: 37px;
+    padding-left: 20px;
+  }
+
+
+  aside{
+    height: 300px;
+  }
+
+  aside > div{
+    height: 300px;
+  }
+
+  aside > div > h4{
+    font-size: 24px;
+    padding-top: 40px;
+    padding-top: 8%;
+    font-weight: bold;
+    line-height: 40px;
+  }
+
+  aside > div > p{
+    font-size: 15px;
+    padding-top: 15px;
+    line-height: 35px;
+  }
+
+  div.phone > div.vd{
+    width: 70%;
+    height: 180px;
+    background-color: #8C573B;
+    display: flex;
+  }
+
+  div.phone > div.vd > div{
+    width: 90%;
+    
+  }
+
+
+  div.phone > div.vd > div > iframe{
+    width: 230px;
+    height: 180px;  
+  }
+
+  div.phone > div.lk{
+    width: 40%;
+    height: 180px;
+  }
+
+  div.phone > div.lk > div > a > img{
+    width: 60%;
+    height: auto;
+    padding-top: 42%;
+    left: 23%;
+  }
+
+  div.phone > div.lk > div > h2{
+  	font-size: 20px;
+  }
+
+  main > div > div.leftbox{
+    float: left;
+    padding-top: 55px;
+    padding-left: 20px;
+  }
+
+  main > div > div.rightbox{
+    float: left;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+
+  main > div > div.rightbox > img{
+    width: 105%;
+    height: 100%;
+  }
+
+  main > div > div.leftbox > p{
+    font-size: 0.9em;
+    padding-top: 30px;
+    line-height: 43px;
+  }
+
+  main > div > div.leftbox > h2{
+    font-size: 55px;
+  }
+/*------------------------------------------------------*/
+  section#s1 > div{
+    padding: 12%;
+  }
+
+  section#s1 > div > div{
+    width: 100%;
+  }
+
+  section#s1 > div > div.lb{
+    float: left;
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+
+  section#s1 > div > div.lb > img{
+    width: 28%;
+    height: 100%;
+  }
+
+  section#s1 > div > div.rb{
+    float: left;  
+    padding-top: 55px;
+    padding-left: 2%;
+  }
+
+  section#s1 > div > div > ol{
+    font-size: 20px;
+    padding-top: 30px;
+    line-height: 38px;
+    padding-left: 0px;
+  }
+
+  div.rb > h5{
+    font-size: 40px;
+    padding-left: 0px;
+  }
+/*------------------------------------------------------*/
+  footer > div{
+    padding: 12%;
+  }
+
+  footer > div > div{
+    width: 100%;
+  }
+
+  footer > div > div.wordbox{
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  footer > div > div.linkbox{
+    float: left;  
+    padding-left: 20px;
+  }
+
+}
+/*------------------------------------------------------*/
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  #menubtn{
+    display: block;
+    width: 41px;
+    height: 37px;
+    background-size: 100% 100%;
+    float: right;
+  }
+
+  header > nav{
+    transition: height 0.3s;
+    height: 37px;
+    overflow: hidden;
+  }
+
+  header > nav.open{
+    height: 155px;
+  }
+
+  header > nav > h1 > a{
+    line-height: 37px;
+    padding-left: 20px;
+  }
+
+  header > nav > div > a{
+    line-height: 37px;
+    padding-left: 20px;
+  }
+
+
+  aside{
+    height: 300px;
+  }
+
+  aside > div{
+    height: 300px;
+  }
+
+  aside > div > h4{
+    font-size: 24px;
+    padding-top: 40px;
+    padding-top: 8%;
+    font-weight: bold;
+    line-height: 40px;
+  }
+
+  aside > div > p{
+    font-size: 15px;
+    padding-top: 15px;
+    line-height: 35px;
+  }
+
+  div.phone > div.vd{
+    width: 70%;
+    height: 180px;
+    background-color: #8C573B;
+    display: flex;
+  }
+
+  div.phone > div.vd > div{
+    width: 90%;
+    
+  }
+
+
+  div.phone > div.vd > div > iframe{
+    width: 230px;
+    height: 180px;  
+  }
+
+  div.phone > div.lk{
+    width: 40%;
+    height: 180px;
+  }
+
+  div.phone > div.lk > div > a > img{
+    width: 60%;
+    height: auto;
+    padding-top: 65%;
+    left: 25%;
+  }
+
+  div.phone > div.lk > div > h2{
+  	font-size: 20px;
+  }
+
+  main > div > div.leftbox{
+    float: left;
+    padding-top: 55px;
+    padding-left: 20px;
+  }
+
+  main > div > div.rightbox{
+    float: left;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+
+  main > div > div.rightbox > img{
+    width: 105%;
+    height: 100%;
+  }
+
+  main > div > div.leftbox > p{
+    font-size: 1.3em;
+    padding-top: 30px;
+    line-height: 43px;
+  }
+
+  main > div > div.leftbox > h2{
+    font-size: 50px;
+  }
+/*------------------------------------------------------*/
+  section#s1 > div{
+    padding: 12%;
+  }
+
+  section#s1 > div > div{
+    width: 100%;
+  }
+
+  section#s1 > div > div.lb{
+    float: left;
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+
+  section#s1 > div > div.lb > img{
+    width: 27%;
+    height: 100%;
+  }
+
+  section#s1 > div > div.rb{
+    float: left;  
+    padding-top: 55px;
+    padding-left: 10px;
+  }
+
+  section#s1 > div > div > ol{
+    font-size: 20px;
+    padding-top: 30px;
+    line-height: 38px;
+    padding-left: 0px;
+  }
+
+  div.rb > h5{
+    font-size: 40px;
+    padding-left: 0px;
+  }
+/*------------------------------------------------------*/
+  footer > div{
+    padding: 12%;
+  }
+
+  footer > div > div{
+    width: 100%;
+  }
+
+  footer > div > div.wordbox{
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  footer > div > div.linkbox{
+    float: left;  
+    padding-left: 20px;
+  }
+
+}

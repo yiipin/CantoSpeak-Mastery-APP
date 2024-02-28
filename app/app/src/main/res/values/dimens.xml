@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="answerBtn_width">300dp</dimen>
+    <dimen name="answerBtn_height">300dp</dimen>
+    <dimen name="startBtn_width">180dp</dimen>
+    <dimen name="startBtn_height">50dp</dimen>
+</resources>

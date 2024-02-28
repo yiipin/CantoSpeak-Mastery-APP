@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Cantonese 闖粵憑交道"> <!-- 分享的標題  -->
+    <meta property="og:description" content="嘉大數位系學生團隊全新製作，Android 粵語學習App全新登場"> <!-- 分享的內容敘述 -->
+    <meta property="og:url" content="https://natsu72258.github.io/new-arkone/"> <!-- 分享的網頁連結 -->
+    <meta property="og:image" content="https://chtong6.github.io/PPP/%E5%9C%96.png"> <!--分享在FB的縮圖 -->
+    <title>闖粵憑交道-學習映像</title>
+    <link href="css/third.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/device.js/0.2.7/device.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/line.js"></script> 
+</head>
+<body>
+    <header>
+        <nav class="">
+        <h1><a href="index.html">闖粵憑交道</a></h1>
+        <a id="menubtn" href="javascript:;"></a>
+            <div>
+                <a href="index2.html">製作理念</a>
+                <a href="playpage.html">使用介紹</a>
+                <a href="videopage.html">學習映像</a>
+            </div>
+        </nav>
+    </header>
+     <aside>
+        <h3>學習映像</h3>
+    </aside>
+    <article>
+            <div class="box1">
+                <div class="left">
+                    <iframe src="https://www.youtube.com/embed/cshtPHHFFe0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="right">
+                    <iframe src="https://www.youtube.com/embed/7tSo6DGQ5q0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="lf">
+                     <iframe src="https://www.youtube.com/embed/bt3tg4-m4ig" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="rh">
+                   <iframe src="https://www.youtube.com/embed/XdNLvYJlSG8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="lt">
+                     <iframe src="https://www.youtube.com/embed/UXI9Y9Tmyg8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="rt">
+                    <iframe src="https://www.youtube.com/embed/q3TVuXP_PVc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+    </article>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <button type="button" id="BackTop" class="toTop-arrow"></button>
+        <script>
+        $(function(){
+            $('#BackTop').click(function(){ 
+                $('html,body').animate({scrollTop:0}, 333);
+            });
+            $(window).scroll(function() {
+                if ( $(this).scrollTop() > 300 ){
+                    $('#BackTop').fadeIn(222);
+                } else {
+                    $('#BackTop').stop().fadeOut(222);
+                }
+            }).scroll();
+        });
+        </script>
+
+    <footer>
+            <div>
+            <div class="wordbox">
+                <h6>關於我們</h6>
+                <a href="peoplepage.html">創作人員</a>
+                <a href="javascript:;">APP下載</a>
+            </div>
+            <div class="linkbox">
+                <h3>社群分享</h3>
+                <div>
+                    <a id="FB" href="javascript:;">
+                    <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
+                </a>
+                <a id="Linemobile" class="shareBtn mobile" href="javascript:;">line-mobile</a>  
+                <a id="LinePc" class="shareBtn pc" href="javascript:;">line-pc</a>
+                </div>
+            </div>
+        </div>
+        </footer>
+</body>
+</html>
